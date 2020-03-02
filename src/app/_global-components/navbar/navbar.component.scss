@@ -1,0 +1,40 @@
+.menu {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 0;
+}
+
+.menu-home {
+    background-color: transparent;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    font-weight: bold;
+}
+
+.menu,
+.menu-home {
+    display: flex;
+    transition: ease-in all 0.5s;
+}
+
+.menu-item {
+    color:white;
+}
+
+.menu-item-home {
+  color: var(--my-black);
+  padding-top:2%;
+  padding-bottom:2%;
+}
+
+.menu-item,
+.menu-item-home {
+  text-align: center;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: ease-in all 0.5s;
+}
+
+.menu-item-home:hover, .menu-item:hover{
+    text-decoration: underline;
+}

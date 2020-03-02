@@ -1,0 +1,34 @@
+.subscribe{
+    background-color: var(--my-black);
+    position: absolute;
+    bottom:30px;
+    right:30px;
+    padding:40px;
+    border-radius:12px
+}
+
+input{
+    background-color: transparent;
+    color: var(--my-grey);
+    outline: none;
+
+}
+input:focus{
+    outline: none;
+}
+.no-border {
+    border: 0;
+    box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
+}
+.subscribe span{
+    color: var(--my-grey)
+}
+
+.subscribe-btn{
+    background-color: var(--my-grey);
+    color: var(--my-black);
+    text-align: center;
+    width:50%;
+    float:right;
+    border-radius: 4px;
+}
