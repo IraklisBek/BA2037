@@ -1,20 +1,62 @@
 <div class="row" id="my-menu">
-  <div class="menu-item-home col-md-2 my-auto" (click) = "goToPage('/home')">
-    Home
+  <div class="menu-item-home col-md-2 col-sm-2 my-auto" (click)="goToPage('/home')" id="home">
+    Start
   </div>
-  <div class="menu-item-home col-md-2 my-auto" (click) = "goToPage('/about')">
+  <div class="menu-item-home col-md-2 col-sm-2 my-auto" (click)="goToPage('/about')" id="about">
     ?
   </div>
-  <div class="menu-item-home col-md-2 my-auto" (click) = "goToPage('artists')">
-    Artists
+  <div class="menu-item-home col-md-2 col-sm-2 my-auto" (click)="goToPage('artists')" id="artists">
+    Friends
   </div>
-  <div class="menu-item-home col-md-2 my-auto" (click) = "goToPage('/events')">
+  <div class="menu-item-home col-md-2 col-sm-2 my-auto" (click)="goToPage('/events')" id="events">
     Events
   </div>
-  <div class="menu-item-home col-md-2 my-auto" (click) = "goToPage('/blog')">
+  <div class="menu-item-home col-md-2 col-sm-2 my-auto" (click)="goToPage('/blog')" id="blog">
     Blog
   </div>
-  <div class="menu-item-home col-md-2 my-auto">
+  <div class="menu-item-home col-md-2 col-sm-2 my-auto" (click)="goToStoa60()">
     <img src="../../../assets/Images/stoa60.png" style="width:50px;">
+  </div>
+</div>
+<!-- 
+<div class="row" id="my-menu-mobile">
+  <div class="menu-item-home col-2 text-center my-auto" (click)="goToPage('/home')" id="home">
+    <img src="../../../assets/Images/power-button.png" style="width:27px;">
+  </div>
+  <div class="menu-item-home col-2 text-center my-auto" (click)="goToPage('/about')" id="about">
+    <img src="../../../assets/Images/question.png" style="width:27px;">
+  </div>
+  <div class="menu-item-home col-2 text-center my-auto" (click)="goToPage('artists')" id="artists">
+    <img src="../../../assets/Images/musical-note.png" style="width:27px;">
+  </div>
+  <div class="menu-item-home col-2 text-center my-auto" (click)="goToPage('/events')" id="events">
+    <img src="../../../assets/Images/play-button.png" style="width:27px;">
+  </div>
+  <div class="menu-item-home col-2 text-center my-auto" (click)="goToPage('/blog')" id="blog">
+    <img src="../../../assets/Images/blogger.png" style="width:27px;">
+  </div>
+  <div class="menu-item-home col-2 text-center my-auto" (click)="goToStoa60()">
+    <img src="../../../assets/Images/stoa60.png" style="width:27px;">
+  </div>
+</div> -->
+
+<div class="row" id="my-menu-mobile">
+  <div class="menu-item-home col-2 text-center my-auto" (click)="goToPage('/home')" id="home">
+    <img src="../../../assets/Images/power-button_grey.png" style="width:27px;">
+  </div>
+  <div class="menu-item-home col-2 text-center my-auto" (click)="goToPage('/about')" id="about">
+    <img src="../../../assets/Images/question_grey.png" style="width:27px;">
+  </div>
+  <div class="menu-item-home col-2 text-center my-auto" (click)="goToPage('artists')" id="artists">
+    <img src="../../../assets/Images/musical-note_grey.png" style="width:27px;">
+  </div>
+  <div class="menu-item-home col-2 text-center my-auto" (click)="goToPage('/events')" id="events">
+    <img src="../../../assets/Images/play-button_grey.png" style="width:27px;">
+  </div>
+  <div class="menu-item-home col-2 text-center my-auto" (click)="goToPage('/blog')" id="blog">
+    <img src="../../../assets/Images/blogger_grey.png" style="width:27px;">
+  </div>
+  <div class="menu-item-home col-2 text-center my-auto" (click)="goToStoa60()">
+    <img src="../../../assets/Images/stoa60.png" style="width:27px;">
   </div>
 </div>

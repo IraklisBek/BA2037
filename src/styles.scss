@@ -1,7 +1,9 @@
+@import "toastr.scss";
+
 :root {
   --my-black: #232323;
   --my-black-opacity: rgba(0, 0, 0, 0.8);
-  --my-grey: #EBEBEB;
+  --my-grey: #ebebeb;
 }
 
 body {
@@ -36,14 +38,15 @@ body {
   transition: all ease 0.5s;
 }
 
-.shadow-circle{
+.shadow-circle {
   box-shadow: 0px 0px 26px 7px white;
 }
 
-.shadow-circle-2{
+.shadow-circle-2 {
   box-shadow: 0px 0px 26px -5px white;
 }
-.circle, .circle-navbar {
+.circle,
+.circle-navbar {
   display: inline-block;
   border-radius: 50%;
   background: var(--my-black-opacity);
@@ -51,43 +54,84 @@ body {
   text-align: center;
 }
 
-.circle{
-  padding: 100px;
-  font-size: 2.5em;
+.circle {
+  padding: 50px;
+  font-size: 1.5em;
 }
 
-.circle-nabar{
+.circle-nabar {
   padding: 300px;
 }
 
-.circle:before, .circle-navbar:before {
+.circle:before,
+.circle-navbar:before {
   content: "";
   display: inline-block;
   vertical-align: middle;
   padding-top: 100%;
 }
 
-.circle span, .circle-navbar span {
+.circle span,
+.circle-navbar span {
   display: inline-block;
   vertical-align: middle;
-  color:white;
+  color: white;
 }
 
-.header{
-    border-bottom: 1px solid rgb(122, 122, 122);
-    border-top: 1px solid rgb(122, 122, 122);
-    text-align: center;
-    width:100%;
-    font-weight: bold;
-    color:var(--my-grey);
-    padding:4%
+.line {
+  padding: 0;
+  margin: 0;
+  border-top: 2px solid white;
+  margin: -2px 4px 0px 4px;
 }
 
-.content{
+.header {
+  border-bottom: 1px solid rgb(122, 122, 122);
+  width: 100%;
+  font-weight: bold;
+  color: var(--my-grey);
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.content {
   font-size: 1em;
-  color:var(--my-grey);
-  padding-top:4%;
-  padding-bottom:4%;
+  color: var(--my-grey);
+  padding-top: 4%;
+  padding-bottom: 4%;
   text-align: justify;
   line-height: 2rem;
+}
+
+.seperator {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+.m-t-15 {
+  margin-top: 15px;
+}
+.m-t-40 {
+  margin-top: 40px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+@media (min-width: 480px) and (max-width: 4800px) {
+  .header {
+    border-top: 1px solid rgb(122, 122, 122);
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .m-t-nav-mobile {
+    padding-top: 40%;
+  }
 }

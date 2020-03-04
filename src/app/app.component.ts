@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from "@angular/common";
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ export class AppComponent {
   constructor(
     private router: Router,
     private location: Location,
+    private toastr: ToastrService
   ) {
   }
 
@@ -20,11 +22,19 @@ export class AppComponent {
     this.blur_bg = document.getElementById("blur_bg")
     this.router.events.subscribe(val => {
       this.route = this.location.path();
+
+      var activeRoute = this.route.substr(1);
+      var activeNavbarItem = document.getElementById(activeRoute)
       var menu = document.getElementById("my-menu");
       var menuItems = menu.getElementsByTagName('div');
 
+      for (var i = 0; i < menuItems.length; i++) {
+        var childDiv = menuItems[i];
+        childDiv.classList.remove("underline")
+      }
+      activeNavbarItem.classList.add("underline");
+
       if (this.route != '/home') {
-        document.getElementById("subscribe").style.display="none"
         this.blur_bg.classList.add("yes-visibility-2");
         this.blur_bg.classList.remove("no-visibility-2");
         menu.classList.remove("menu-home")
@@ -35,7 +45,6 @@ export class AppComponent {
           childDiv.classList.add("menu-item")
         }
       } else {
-        document.getElementById("subscribe").style.display="block"
         this.blur_bg.classList.remove("yes-visibility-2");
         this.blur_bg.classList.add("no-visibility-2");
         menu.classList.add("menu-home")
@@ -48,4 +57,5 @@ export class AppComponent {
       }
     });
   }
+
 }

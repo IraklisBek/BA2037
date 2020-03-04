@@ -1,0 +1,54 @@
+.subscribe {
+  background-color: var(--my-black-opacity);
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 40px;
+  width: 30%;
+  margin-left: 35%;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .subscribe {
+    width: 90%;
+    margin-left:5%;
+  }
+  .mobile-top{
+    margin-top:40px;
+  }
+}
+input {
+  margin-top: 10px;
+  background-color: transparent;
+  color: var(--my-grey);
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.no-border {
+  border: 0;
+  box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
+}
+
+.subscribe span {
+  color: var(--my-grey);
+}
+
+.subscribe-btn {
+  background-color: var(--my-grey);
+  color: var(--my-black);
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 4px;
+  margin-top: 30px;
+  cursor: pointer;
+  border: 1px solid var(--my-black);
+  padding: 8px;
+}
+
+.subscribe-btn:hover {
+  color: var(--my-grey);
+  background-color: var(--my-black);
+}

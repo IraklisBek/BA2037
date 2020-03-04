@@ -12,6 +12,7 @@ import { ArtistsComponent } from './pages/artists/artists.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EventsComponent } from './pages/events/events.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BlogComponent } from './pages/blog/blog.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    GlobalComponentsModule
+    GlobalComponentsModule,
+    ToastrModule.forRoot() // ToastrModule added
   ],
   providers: [],
   bootstrap: [AppComponent]

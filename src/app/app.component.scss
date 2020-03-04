@@ -1,34 +1,55 @@
-.subscribe{
-    background-color: var(--my-black);
-    position: absolute;
-    bottom:30px;
-    right:30px;
-    padding:40px;
-    border-radius:12px
+.subscribe {
+  background-color: var(--my-black);
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  padding: 30px;
+  border-radius: 12px;
+  width:18%;
 }
 
-input{
-    background-color: transparent;
-    color: var(--my-grey);
-    outline: none;
+input {
+  margin-top: 10px;
+  background-color: transparent;
+  color: var(--my-grey);
+  outline: none;
+}
 
+input:focus {
+  outline: none;
 }
-input:focus{
-    outline: none;
-}
+
 .no-border {
-    border: 0;
-    box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
-}
-.subscribe span{
-    color: var(--my-grey)
+  border: 0;
+  box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
 }
 
-.subscribe-btn{
-    background-color: var(--my-grey);
-    color: var(--my-black);
-    text-align: center;
-    width:50%;
-    float:right;
-    border-radius: 4px;
+.subscribe span {
+  color: var(--my-grey);
+}
+
+.subscribe-btn {
+  background-color: var(--my-grey);
+  color: var(--my-black);
+  text-align: center;
+  width: 50%;
+  float: right;
+  border-radius: 4px;
+  margin-top: 30px;
+  cursor: pointer;
+  border: 1px solid var(--my-black);
+  padding: 8px;
+}
+
+.subscribe-btn:hover {
+  color: var(--my-grey);
+  background-color: var(--my-black);
+}
+
+.home-info{
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: var(--my-grey);
+  font-weight: bold;
 }
