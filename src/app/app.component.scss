@@ -53,3 +53,11 @@ input:focus {
   color: var(--my-grey);
   font-weight: bold;
 }
+.dummy, .dummy2{
+  height:58px; width:100%; background-color: var(--my-grey); position:fixed; z-index:10000
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .dummy{
+    height:0 !important;
+  }
+}

@@ -50,4 +50,16 @@ export class GetDataService {
     }
     return comparison;
   }
+
+  public getDevice() {
+    var MOBILE_MAX_WIDTH = 425;  //Adjust as needed
+    var TABLET_MAX_WIDTH = 1024; //Adjust as needed
+    var DESKTOP_MAX_WIDTH = 2305; //Adjust as needed
+
+    return {
+      isMobile: window.screen.width <= MOBILE_MAX_WIDTH,
+      isTablet: window.screen.width <= TABLET_MAX_WIDTH && window.screen.width > MOBILE_MAX_WIDTH,
+      isDesktop: window.screen.width <= DESKTOP_MAX_WIDTH && window.screen.width > MOBILE_MAX_WIDTH && window.screen.width > TABLET_MAX_WIDTH
+    }
+  }
 }

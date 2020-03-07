@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from "@angular/common";
 import { ToastrService } from 'ngx-toastr';
+import { GetDataService } from './_services/get-data.service';
 
 @Component({
   selector: 'app-root',
@@ -11,14 +12,17 @@ import { ToastrService } from 'ngx-toastr';
 export class AppComponent {
   private route: string;
   private blur_bg
+  public isMobile
   constructor(
     private router: Router,
     private location: Location,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private getData: GetDataService
   ) {
   }
 
   ngOnInit() {
+    this.getDevices()
     this.blur_bg = document.getElementById("blur_bg")
     this.router.events.subscribe(val => {
       this.route = this.location.path();
@@ -66,7 +70,9 @@ export class AppComponent {
       }
     });
   }
-
+  public getDevices(){
+    this.isMobile = this.getData.getDevice().isMobile
+  }
 }
 
 // ," Releases:", "Compilations", "Liquid Seed Recordings - ' Seeds of Thought ' compiled by A.i.A", "Track: Deep In Mind - Bicycle Day", "www.liquidseed.net/releases/lsd018…mpiled-by-a-i-a", "Namaha Records - 'Crying Trees' compiled by Ambient Terrorist A.K.A Fishimself", "Track: Deep In Mind - Bat Yam", "www.beatport.com/release/crying-trees/1098407", "Ektoplazm - 'Into This Wired Abyss Volume 2' compiled by Atman Construct", "Track: Deep In Mind - Senses", "www.ektoplazm.com/free-music/into-…ired-abyss-vol-2", "Ektoplaszm - 'Turlitava 2' compiled by Anub1s", "Track: Deep In Mind - Nimphaea Alba", "www.ektoplazm.com/free-music/turlitava-2", "No Label - 'Into This Wired Abyss Volume 1' compiled by Atman Construct", "Track: Deep In Mind - Aura", "intothiswiredabyss.bandcamp.com/", "Uxmal Records - 'When Melancholy speaks' compiled by lemonchill", "Track: Deep In Mind - Nerium Oleander", "www.psyshop.com/shop/CDs/uxm/uxm1cd009.html", "EP", "Plusquam Records - Deep In Mind - Dialogue", "www.psyshop.com/shop/Downloads/plc/plc1dw052.html", "UXMAL Records - Deep In Mind - Guerilla", "pro.beatport.com/release/guerilla/1406063", "Remixes", "Lemonchill - I missed a heartbeat(Deep In Mind remix)", "www.beatport.com/track/i-missed-a…nd-remix/5699949", "Contact", "deepinmindtheband@gmail.com", "@deep_in_mind", "www.youtube.com/user/DeepinMindtheband", "www.facebook.com/pages/Deep-In-Mi…56375250?fref=ts", "www.vimeo.com/user8378697"

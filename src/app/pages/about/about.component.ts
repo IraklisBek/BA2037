@@ -13,5 +13,11 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
   }
+  goToFacebook() {
+    window.open("https://facebook.com/BA2037/", "_blank");
+  }
 
+  goToSoundcloud() {
+    window.open("https://soundcloud.com/ba2037/", "_blank");
+  }
 }

@@ -7,8 +7,8 @@ import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-artist-details',
-  templateUrl: './artist.component.html',
-  styleUrls: ['./artist.component.scss'],
+  templateUrl: './artist-details.component.html',
+  styleUrls: ['./artist-details.component.scss'],
   animations: [fadeInOnEnterAnimation()]
 })
 export class ArtistDetailsComponent implements OnInit {
@@ -16,6 +16,7 @@ export class ArtistDetailsComponent implements OnInit {
   public artists
   //public artist: ArtistModel
   public artistName
+  public isMobile;
   constructor(
     private getDataService: GetDataService,
     private route: ActivatedRoute,
@@ -23,6 +24,7 @@ export class ArtistDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.getDevices()
     setInterval(function(){
       var parentWidth = document.getElementById("container").offsetWidth
       var artistDetails = document.getElementsByClassName("child") as HTMLCollectionOf<HTMLElement>;
@@ -55,5 +57,9 @@ export class ArtistDetailsComponent implements OnInit {
 
   goToLink(link) {
     window.open(link, "_blank");
+  }
+
+  getDevices(){
+    this.isMobile = this.getDataService.getDevice().isMobile
   }
 }

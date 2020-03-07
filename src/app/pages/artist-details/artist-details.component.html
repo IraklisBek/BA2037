@@ -9,19 +9,20 @@
   </div>
 </div>
 
-<div class="row m-t-40" [@fadeInOnEnter]>
-  <div class="col-md-3 text-center">
+<div class="row m-t-40" [@fadeInOnEnter] style="width:100%">
+  <div class="col-md-4 col-sm-4 col-12 text-center">
     <img src="../../../assets/Images/Artists/{{artist.photo}}" class="artist-img">
     <div *ngIf="artist.soundcloud; let soundcloud" class="links" (click)="goToLink(soundcloud)"><br>{{soundcloud}}</div>
     <div *ngIf="artist.mixcloud; let mixcloud" class="links" (click)="goToLink(mixcloud)"><br>{{mixcloud}}</div>
     <div *ngIf="artist.youtube; let youtube" class="links" (click)="goToLink(youtube)"><br>{{youtube}}</div>
     <div *ngIf="artist.facebook; let facebook" class="links" (click)="goToLink(facebook)"><br>{{facebook}}</div>
+    <div *ngIf="isMobile" class="seperator dashed-line"></div>
 
   </div>
-  <div class="col-9" style="color:var(--my-grey)">
+  <div class="col-8 col-sm-8 col-12 mobile-center" style="color:var(--my-grey)">
     <div *ngFor="let line of artist.description">
       {{line}}
-      <div class="seperator" style="opacity:0.3;   border-bottom: 1px dashed rgb(122, 122, 122); padding-top:15px; margin-bottom:15px;"></div>
+      <div class="seperator dashed-line"></div>
     </div>
   </div>
 </div>

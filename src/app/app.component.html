@@ -1,11 +1,10 @@
 
-<div id="dummy" *ngIf="this.route != '/home'" class="no-visibility-2" style="height:58px; width:100%; background-color: var(--my-grey); position:fixed; z-index:10000"></div>
+<div id="dummy" *ngIf="this.route != '/home'" class="no-visibility-2 dummy"></div>
 
 <div class="container" id="container">
     <app-navbar></app-navbar>
-    <div style="padding-top:55px;">
+    <div [ngStyle]="{'padding-top': (this.route != '/home' && !isMobile)? '55px': '0'}" style="padding-bottom:200px">
         <router-outlet></router-outlet>
-
     </div>
 </div>
 

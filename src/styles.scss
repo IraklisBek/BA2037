@@ -108,6 +108,9 @@ body {
   text-align: center;
 }
 
+.dashed-line{
+  opacity:0.3;   border-bottom: 1px dashed rgb(122, 122, 122); padding-top:15px; margin-bottom:15px;
+}
 .bold {
   font-weight: bold;
 }
@@ -149,10 +152,16 @@ body {
   .back {
     width: 20px;
   }
+  .header, .content{
+    text-align: center;
+  }
+  .links{
+    text-align: center !important; 
+  }
 }
 
 .links{
-  text-align: left !important; color:var(--my-blue); text-decoration: underline; cursor:pointer;   font-weight: bold;
+  text-align: left ; color:var(--my-blue); text-decoration: underline; cursor:pointer;   font-weight: bold;
 
 }
 

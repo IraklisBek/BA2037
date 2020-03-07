@@ -14,7 +14,7 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { ToastrModule } from 'ngx-toastr';
 import { GetDataService } from './_services/get-data.service';
 import { HttpClientModule } from '@angular/common/http';
-import { ArtistDetailsComponent } from './pages/artist-details/artist.component';
+import { ArtistDetailsComponent } from './pages/artist-details/artist-details.component';
 
 @NgModule({
   declarations: [

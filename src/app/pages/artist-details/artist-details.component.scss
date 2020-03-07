@@ -1,5 +1,5 @@
 .artist-img {
-  width: 100%;
+  width: 80%;
   transition: 0.3s;
   border-radius: 50%;
   object-fit: cover;
@@ -8,5 +8,8 @@
 @media (min-width: 320px) and (max-width: 576px) {
   .artist-img {
     width: 60%;
+  }
+  .mobile-center{
+    text-align: center;
   }
 }
