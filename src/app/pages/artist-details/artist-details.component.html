@@ -9,7 +9,8 @@
   </div>
 </div>
 
-<div class="row m-t-40" [@fadeInOnEnter] style="width:100%">
+<div class="row m-t-40" [@fadeInOnEnter] >
+  <!-- style="width:100%" -->
   <div class="col-md-4 col-sm-4 col-12 text-center">
     <img src="../../../assets/Images/Artists/{{artist.photo}}" class="artist-img">
     <div *ngIf="artist.soundcloud; let soundcloud" class="links" (click)="goToLink(soundcloud)"><br>{{soundcloud}}</div>

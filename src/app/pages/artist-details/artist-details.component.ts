@@ -17,49 +17,42 @@ export class ArtistDetailsComponent implements OnInit {
   //public artist: ArtistModel
   public artistName
   public isMobile;
+  public scroll
   constructor(
     private getDataService: GetDataService,
     private route: ActivatedRoute,
-    private location: Location
+    private location: Location,
+    private router: Router
+
   ) { }
 
   ngOnInit() {
     this.getDevices()
-    setInterval(function(){
-      var parentWidth = document.getElementById("container").offsetWidth
-      var artistDetails = document.getElementsByClassName("child") as HTMLCollectionOf<HTMLElement>;
-      for (var i = 0; i < artistDetails.length; i++) {
-        artistDetails[i].style.width = (parentWidth + "px");
-      }
+    this.route.queryParams.subscribe(params => {
+      this.scroll = params["scroll"]
     })
 
-    // this.artist = new ArtistModel
-    // this.artistName = this.route.snapshot.params['name'];
-    // this.getDataService.getArtists().subscribe(res => {
-    //   this.artists = res
-    //   this.artist = this.getDataService.getArtist(res, this.artistName)
-    // })
+    this.artist = new ArtistModel
+    this.artistName = this.route.snapshot.params['name'];
+    this.getDataService.getArtists().subscribe(res => {
+      this.artists = res
+      this.artist = this.getDataService.getArtist(res, this.artistName)
+    })
   }
 
   goBack() {
-    document.getElementById("details_" + this.artist.id).classList.add("no-visibility-2")
-    document.getElementById("details_" + this.artist.id).classList.remove("yes-visibility-2")
-    document.getElementById("artistsLiveHeader").classList.remove("no-visibility-2")
-    document.getElementById("artistsLiveHeader").classList.add("yes-visibility-2")
-    document.getElementById("artistsLive").classList.remove("no-visibility-2")
-    document.getElementById("artistsLive").classList.add("yes-visibility-2")
-    document.getElementById("artistsDJSetsHeader").classList.remove("no-visibility-2")
-    document.getElementById("artistsDJSetsHeader").classList.add("yes-visibility-2")
-    document.getElementById("artistsDJSets").classList.remove("no-visibility-2")
-    document.getElementById("artistsDJSets").classList.add("yes-visibility-2")
-    //this.location.back()
+    this.router.navigate(["artists"], {
+      queryParams: {
+        scroll: this.scroll
+      }
+    })
   }
 
   goToLink(link) {
     window.open(link, "_blank");
   }
 
-  getDevices(){
+  getDevices() {
     this.isMobile = this.getDataService.getDevice().isMobile
   }
 }

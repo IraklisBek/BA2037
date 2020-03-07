@@ -2,22 +2,28 @@
   <span style="font-size:1.2em">Experimental Sundays</span>
 </div>
 
-<div class="content" [@fadeInOnEnter]>
-  Experimental Sundays Content
+<div class="content row" [@fadeInOnEnter] id="sundays">
+  <div *ngFor="let sunday of sundays"class="col-md-2 col-sm-4 col-6 text-center">
+    <app-event [event] = sunday></app-event>
+  </div>
 </div>
 
 <div class="header" [@fadeInOnEnter]>
   <span style="font-size:1.2em">Saturday Takeovers</span>
 </div>
 
-<div class="content" [@fadeInOnEnter]>
-  Saturday Takeovers
+<div class="content row" [@fadeInOnEnter] id="saturdays">
+  <div *ngFor="let saturday of saturdays"class="col-md-2 col-sm-4 col-6 text-center">
+    <app-event [event] = saturday></app-event>
+  </div>
 </div>
 
 <div class="header" [@fadeInOnEnter]>
-  <span style="font-size:1.2em">University of Crete</span>
+  <span style="font-size:1.2em">Parties</span>
 </div>
 
-<div class="content" [@fadeInOnEnter]>
-  University of Crete Content
+<div class="content row" [@fadeInOnEnter] id="parties">
+  <div *ngFor="let party of parties"class="col-md-2 col-sm-4 col-6 text-center">
+    <app-event [event] = party></app-event>
+  </div>
 </div>

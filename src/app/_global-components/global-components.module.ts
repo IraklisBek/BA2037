@@ -18,6 +18,7 @@ import { BlogComponent } from './blog/blog.component';
   exports: [
     NavbarComponent,
     ArtistComponent,
+    EventComponent,
     BlogComponent
   ]
 })

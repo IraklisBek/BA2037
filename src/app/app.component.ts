@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { Location } from "@angular/common";
+import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Location, ViewportScroller } from "@angular/common";
 import { ToastrService } from 'ngx-toastr';
 import { GetDataService } from './_services/get-data.service';
+import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -10,18 +12,29 @@ import { GetDataService } from './_services/get-data.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  private route: string;
+  @ViewChild('contentArea') private contentArea: ElementRef<HTMLElement>;
+
+  public route: string;
   private blur_bg
   public isMobile
+
+  private _routeScrollPositions: { [url: string]: number }[] = [];
+  private _subscriptions: Subscription[] = []
+
+
   constructor(
     private router: Router,
     private location: Location,
     private toastr: ToastrService,
-    private getData: GetDataService
+    private getData: GetDataService,
   ) {
+
   }
 
   ngOnInit() {
+
+
+
     this.getDevices()
     this.blur_bg = document.getElementById("blur_bg")
     this.router.events.subscribe(val => {
@@ -40,8 +53,8 @@ export class AppComponent {
         activeNavbarItem.classList.add("underline");
 
       if (this.route != '/home') {
-        setTimeout(function(){
-          if(document.getElementById("dummy")!=null){
+        setTimeout(function () {
+          if (document.getElementById("dummy") != null) {
             document.getElementById("dummy").classList.add("yes-visibility-2");
             document.getElementById("dummy").classList.remove("no-visibility-2");
           }
@@ -69,8 +82,10 @@ export class AppComponent {
         }
       }
     });
+
+
   }
-  public getDevices(){
+  public getDevices() {
     this.isMobile = this.getData.getDevice().isMobile
   }
 }

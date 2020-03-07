@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { fadeInOnEnterAnimation } from 'angular-animations';
-import { routerNgProbeToken } from '@angular/router/src/router_module';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,12 +10,16 @@ import { Router } from '@angular/router';
 })
 export class ArtistComponent implements OnInit {
   @Input() artist
-
+  top
   constructor(
     private router: Router
   ) { }
 
   ngOnInit() {
+    var _this = this
+    window.addEventListener("scroll", function (event) {
+      _this.top = this.scrollY
+    }, false);
   }
 
   enter() {
@@ -29,16 +32,10 @@ export class ArtistComponent implements OnInit {
   }
 
   goToArtist() {
-    document.getElementById("details_"+this.artist.id).classList.remove("no-visibility-2")
-    document.getElementById("details_"+this.artist.id).classList.add("yes-visibility-2")
-    document.getElementById("artistsLiveHeader").classList.add("no-visibility-2")
-    document.getElementById("artistsLiveHeader").classList.remove("yes-visibility-2")
-    document.getElementById("artistsLive").classList.add("no-visibility-2")
-    document.getElementById("artistsLive").classList.remove("yes-visibility-2")
-    document.getElementById("artistsDJSetsHeader").classList.add("no-visibility-2")
-    document.getElementById("artistsDJSetsHeader").classList.remove("yes-visibility-2")
-    document.getElementById("artistsDJSets").classList.add("no-visibility-2")
-    document.getElementById("artistsDJSets").classList.remove("yes-visibility-2")
-    //this.router.navigate(["artists/" + this.artist.name])
+    this.router.navigate(["artists/" + this.artist.name], {
+      queryParams: {
+        scroll: this.top
+      }
+    })
   }
 }

@@ -15,6 +15,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { GetDataService } from './_services/get-data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ArtistDetailsComponent } from './pages/artist-details/artist-details.component';
+import { EventDetailsComponent } from './pages/event-details/event-details.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ArtistDetailsComponent } from './pages/artist-details/artist-details.co
     ArtistsComponent,
     EventsComponent,
     BlogComponent,
-    ArtistDetailsComponent
+    ArtistDetailsComponent,
+    EventDetailsComponent
   ],
   imports: [
     HttpClientModule,

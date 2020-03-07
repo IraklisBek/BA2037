@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ArtistModel } from '../_global-components/_models/artist.model';
+import { EventModel } from '../_global-components/_models/event.model';
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +9,7 @@ import { ArtistModel } from '../_global-components/_models/artist.model';
 export class GetDataService {
 
   artistsUrl = 'assets/data/artists.json';
+  eventsUrl = 'assets/data/events.json';
 
 
   constructor(private http: HttpClient) { }
@@ -33,11 +35,40 @@ export class GetDataService {
     return artistsType
   }
 
-  sortArtistsAlphabetically(artists){
-    artists.sort(this.compare)
+
+  getEvents() {
+    return this.http.get(this.eventsUrl);
   }
 
-  private compare(a, b) {
+  getEvent(events, eventName){
+    var event = events.filter(e => e.name == eventName)
+    return event[0]
+  }
+
+  getEventsType(events: EventModel[], type){
+    var eventType = []
+    for (let event of events){
+      if(event.type==type){
+        eventType.push(event)
+      }
+    }
+    return eventType
+  }
+
+
+
+
+
+
+
+
+
+
+  sortArtistsAlphabetically(artists){
+    artists.sort(this.sortArtists)
+  }
+
+  private sortArtists(a, b) {
     // Use toUpperCase() to ignore character casing
     const nameA = a.name.toUpperCase();
     const nameB = b.name.toUpperCase();

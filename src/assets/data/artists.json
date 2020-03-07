@@ -51,7 +51,7 @@
         "mixcloud": "",
         "facebook": "",
         "photo": "anton_beat_box.png",
-        "description": [],
+        "description": ["Ο Anton Beatbox είναι ένας από τους πιο ιδιαίτερους selectors στην Ελλάδα, και όχι μόνο. Ξεχωρίζει για την ιδιαίτερη αισθητική που χαρακτηρίζει τα Set του - μία περιπλάνηση στον κόσμο της λιγότερο γνωστής ηλεκτρονικής σκηνής, μέσα από ambient, experimental, ritualistic techno και industrial ήχους."],
         "youtube": "https://www.youtube.com/user/0AntN"
     },
     {
@@ -84,18 +84,40 @@
         "mixcloud": "",
         "facebook": "https://www.facebook.com/opioidslotmachine",
         "photo": "osm.png",
-        "description": ["-"],
+        "description": ["Opioid Slot Machine is a project founded in Thessaloniki,Greece on 2016 from Grigoris Kordellas and Iakovos Vogiatzoglou. ", "They had their first EP released on Drvg Cvltvre's imprint 'New York Haunted' along with a second one followed in 2018 on the same label. ", "After Iakovos moved to Copenhagen, Opioid Slot Machine became mostly a solo project from Grigoris. ", "Last year they desided to start their own record label called 'OSM tapes'. The two first releases came from NO/ON and Drvg Cvltvre with another three tapes coming up to see the light soon. ", "OSM have performed in some of the most important venues and festivals in Greece and also in cities like Berlin, Sofia, Zurich, Nicosia & Skopje. ", "From experimental to industrial techno, from ambient and noise to EBM and from slowburned tracks to uptempo they deliver some raw and unexpected energy to the dancefloor."],
         "youtube": ""
     },
     {
         "id": "user_9",
         "type": "live",
-        "name": "Screw - P",
+        "name": "Screw Operation",
         "soundcloud": "",
         "mixcloud": "",
         "facebook": "",
         "photo": "screwp.png",
         "description": ["-"],
+        "youtube": ""
+    },
+    {
+        "id": "user_90",
+        "type": "djset",
+        "name": "Physiq",
+        "soundcloud": "",
+        "mixcloud": "",
+        "facebook": "",
+        "photo": "ps.png",
+        "description": ["-"],
+        "youtube": ""
+    },
+    {
+        "id": "user_2132",
+        "type": "djset",
+        "name": "RO.1",
+        "soundcloud": "",
+        "mixcloud": "https://www.mixcloud.com/nicksirap",
+        "facebook": "https://www.facebook.com/1557252214371731",
+        "photo": "sirap.jpg",
+        "description": ["Born in Athens , grown in Alexandroupolis-Samothraki and live nowadays in Heraklion Crete. Multicultured and musicultured , electronic sounds fav from techno to ambient and dnb to psytrance...Easy vibe feeling and dance addict.Proud member of BA 2037 crew based in Heraklion Crete.", "Enjoy my sets and radio shows....have a nice trip", "https://www.youtube.com/channel/UCYsj0DNrhhc-37brYr4Qfyg", "https://www.facebook.com/Sirap-1557252214371731/", "Member of BA 2037, based in Heraklion, Greece", "https://www.mixcloud.com/BA2037/", "https://www.facebook.com/BA2037/"],
         "youtube": ""
     },
     {
@@ -145,7 +167,7 @@
     {
         "id": "user_14",
         "type": "live",
-        "name": "V.V.I.A (Venus Volcanism + In Atlas)",
+        "name": "V.V.I.A. (Venus Volcanism + In Atlas)",
         "soundcloud": "https://soundcloud.com/venusvolcanism, https://soundcloud.com/inatlas",
         "mixcloud": "",
         "facebook": "https://www.facebook.com/venusvolcanism, https://www.facebook.com/inatlasmusic",
@@ -165,6 +187,17 @@
         "youtube": ""
     },
     {
+        "id": "user_115",
+        "type": "djset",
+        "name": "MX",
+        "soundcloud": "https://soundcloud.com/sicksacks",
+        "mixcloud": "",
+        "facebook": "",
+        "photo": "mx.png",
+        "description": ["-"],
+        "youtube": ""
+    },
+    {
         "id": "user_16",
         "type": "live",
         "name": "Ξέφρενο Αερόστατο",
@@ -172,7 +205,7 @@
         "mixcloud": "",
         "facebook": "https://www.facebook.com/franticaerostat",
         "photo": "ksefreno.jpg",
-        "description": ["-"],
+        "description": ["το μουσικό όχημα του Οδυσσέα Γραμματικάκη, ο οποίος ζει κι αναπνέει στο Ηράκλειο. Ήδη μετρά 13 χρόνια ύπαρξης αλλά και αέναου πειραματισμού, παντρεύοντας τους ήχους με την λογοτεχνία και την ποίηση."],
         "youtube": ""
     },
     {
@@ -183,7 +216,7 @@
         "mixcloud": "",
         "facebook": "https://www.facebook.com/lycurgusts",
         "photo": "lycurgus.png",
-        "description": ["-"],
+        "description": ["Coming from Thessaloniki, Greece, where he performed as a member of the improvisation collective “Fun With Nuns”, Lycurgus a.k.a. CXIxVI, “Goolyk” or “Sibilus Satanicus”, moved to Berlin in 2012 and later on participated as a resident live act at “OUR HOBBY IS DIFFERENT” parties, under the alias “Goolyk”. ", "Co-founder of “Templeyard Studios” collective that begun as a collaboration project with Miltiades, back in 2015, in Tempelhof, Berlin, they released their first short album, “Messages From A Better Destiny” in 2016. His latest vinyl release came in 2017."],
         "youtube": ""
     },
     {
@@ -194,7 +227,7 @@
         "mixcloud": "",
         "facebook": "https://www.facebook.com/tontotontotontotonto",
         "photo": "tonto.jpg",
-        "description": ["-"],
+        "description": ["TONTO is a post-punk-noise, Electroacoustic-core, one man band (Zedde Francesco) from Jesi, Italy with lo-fi furious beats & unsignificant shouts. "],
         "youtube": ""
     },
     {
@@ -205,7 +238,7 @@
         "mixcloud": "",
         "facebook": "https://www.facebook.com/tacetacetacet",
         "photo": "tacet.jpg",
-        "description": ["-"],
+        "description": ["Audiovisual ambient experimental project, performed with electronics , alter ego of Zedde Francesco."],
         "youtube": ""
     },
     {
@@ -213,10 +246,10 @@
         "type": "live",
         "name": "F:ousies",
         "soundcloud": "",
-        "mixcloud": "",
+        "mixcloud": "https://www.mixcloud.com/moremars",
         "facebook": "https://el-gr.facebook.com/more.mars.58",
         "photo": "ps.png",
-        "description": ["-"],
+        "description": ["το προσωπικό μυστικό όπλο του Μάριου, ο οποίος διευθύνει το ανεξάρτητο label More Mars, παρέχοντας στέγη σε οποιαδήποτε μουσική η μή ιδιαιτερότητα κυκλοφορώντας cd,βιβλία,δίσκους και κασσέτες."],
         "youtube": ""
     },
     {
@@ -227,7 +260,7 @@
         "mixcloud": "",
         "facebook": "",
         "photo": "ps.png",
-        "description": ["-"],
+        "description": [" ένα από τα πολλά μουσικά projects του Ιάσωνα Π. ο οποίος εκτός του οτι έχει βάλει τη προσωπική του σφραγίδα σε ουκ ολίγα ηλεκτρονικά σχήματα (Adaptories, And The Wind That Will Come To Blow The Dust Away, Cities In Desolation, Croatan Ensemble, Dom 108, Emissions Of Negativity, It Lies Within, Like Defeated Soldiers Of A Long Forgotten War, Millions Of Dead Tourists, Nihil Verum, Noisea, Rites Of Dissonance, The Factories Of Smirni, The Nylon Bug), διατηρεί από το 1993 το ανεξάρτητο label 1000+1 TiLt που έχει φιλοξενήσει 75 κυκλοφορίες από τον ευρύτερο χώρο της underground και πειραματικής ηλεκτρονικής μουσικής."],
         "youtube": ""
     },
     {
@@ -238,7 +271,7 @@
         "mixcloud": "",
         "facebook": "",
         "photo": "screwp.png",
-        "description": ["-"],
+        "description": [" το alter ego του Αλέξη Μ. (βλέπε Screw Operation) , που κινείται σε idm και techno μονοπάτια. Ο ίδιος περιγράφει την μουσική του ως ηλεκτρονικό έντεχνο / επιθετικό τέκνο."],
         "youtube": ""
     },
     {
@@ -271,7 +304,7 @@
         "mixcloud": "https://www.mixcloud.com/RREAKTIV",
         "facebook": "https://el-gr.facebook.com/tinosisisi",
         "photo": "reaktiv.png",
-        "description": ["-"],
+        "description": ["Ο Reaktiv. είναι παραγωγός και dj από την Αθήνα και μέλος της ομάδας Love Techno Hate Greece."],
         "youtube": ""
     },
     {
@@ -304,7 +337,7 @@
         "mixcloud": "",
         "facebook": "https://www.facebook.com/epiruentertainment",
         "photo": "service.jpg",
-        "description": ["-"],
+        "description": ["Athenian based DJ & host of the weekly show Epiru Entertainment on Cannibal radio, Service Cost is also the driving force of an online podcast series called U-BAHN. ", "His collection varies through genres as well as his dj sets."],
         "youtube": ""
     },
     {
@@ -396,6 +429,17 @@
         "youtube": ""
     },
     {
+        "id": "user_34",
+        "type": "djset",
+        "name": "Regular Expression",
+        "soundcloud": "https://soundcloud.com/regular-expression-ba",
+        "mixcloud": "https://www.mixcloud.com/int1",
+        "facebook": "",
+        "photo": "nishta.jpg",
+        "description": ["Love for the interesting side of the Electronics and enjoying sharing them with the community"],
+        "youtube": ""
+    },
+    {
         "id": "user_35",
         "type": "djset",
         "name": "Ntavisia",
@@ -422,7 +466,7 @@
         "type": "djset",
         "name": "Melmaid",
         "soundcloud": "",
-        "mixcloud": "",
+        "mixcloud": "https://www.mixcloud.com/kemelp",
         "facebook": "",
         "photo": "ps.png",
         "description": ["-"],
