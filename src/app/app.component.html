@@ -1,6 +1,12 @@
-<div class="container">
+
+<div id="dummy" *ngIf="this.route != '/home'" class="no-visibility-2" style="height:58px; width:100%; background-color: var(--my-grey); position:fixed; z-index:10000"></div>
+
+<div class="container" id="container">
     <app-navbar></app-navbar>
-    <router-outlet></router-outlet>
+    <div style="padding-top:55px;">
+        <router-outlet></router-outlet>
+
+    </div>
 </div>
 
 <div class="blur-bg no-visibility-2" id="blur_bg"></div>

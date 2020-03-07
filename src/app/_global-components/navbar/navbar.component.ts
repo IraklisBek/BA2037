@@ -7,12 +7,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  private openMenu:boolean = false;
+  private openMenu: boolean = false;
   constructor(
     private router: Router
   ) { }
 
   ngOnInit() {
+    setInterval(function(){
+      var parentWidth = document.getElementById("container").offsetWidth
+      var menu = document.getElementById("my-menu").style.width = parentWidth + "px"
+    }, 1)
+
+
   }
 
   goToPage(page) {

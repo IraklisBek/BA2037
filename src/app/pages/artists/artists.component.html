@@ -1,17 +1,21 @@
-<div class="header" [@fadeInOnEnter]>
+<div *ngFor="let artistDetails of artists" id="details_{{artistDetails.id}}" class="no-visibility-2 child" style="position: fixed;;">
+  <app-artist-details [artist] = artistDetails></app-artist-details>
+</div>
+
+<div class="header" [@fadeInOnEnter] id="artistsLiveHeader">
   <span style="font-size:1.2em">Live</span>
 </div>
 
-<div class="content row" [@fadeInOnEnter]>
+<div class="content row" [@fadeInOnEnter] id="artistsLive">
   <div *ngFor="let artistLive of artistsLive; let i=index" class="col-md-2 col-sm-4 col-12 text-center">
     <app-artist [artist] = artistLive></app-artist>
   </div>
 </div>
-<div class="header" [@fadeInOnEnter]>
+<div class="header" [@fadeInOnEnter] id="artistsDJSetsHeader">
   <span style="font-size:1.2em">DJ Sets</span>
 </div>
 
-<div class="content row" [@fadeInOnEnter]>
+<div class="content row" [@fadeInOnEnter] id="artistsDJSets">
   <div *ngFor="let artistDJSet of artistsDJSet; let i=index" class="col-md-2 col-sm-4 col-12 text-center">
     <app-artist [artist] = artistDJSet></app-artist>
   </div>

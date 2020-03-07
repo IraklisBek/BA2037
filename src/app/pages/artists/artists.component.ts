@@ -19,6 +19,7 @@ export class ArtistsComponent implements OnInit {
   ngOnInit() {
     this.dataService.getArtists().subscribe(res=>{
       this.artists = res;
+      this.dataService.sortArtistsAlphabetically(this.artists)
       this.artistsLive = this.dataService.getArtistsType(this.artists, 'live');
       this.artistsDJSet = this.dataService.getArtistsType(this.artists, 'djset');
     })

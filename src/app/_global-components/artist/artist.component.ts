@@ -29,6 +29,16 @@ export class ArtistComponent implements OnInit {
   }
 
   goToArtist() {
-    this.router.navigate(["artists/" + this.artist.name])
+    document.getElementById("details_"+this.artist.id).classList.remove("no-visibility-2")
+    document.getElementById("details_"+this.artist.id).classList.add("yes-visibility-2")
+    document.getElementById("artistsLiveHeader").classList.add("no-visibility-2")
+    document.getElementById("artistsLiveHeader").classList.remove("yes-visibility-2")
+    document.getElementById("artistsLive").classList.add("no-visibility-2")
+    document.getElementById("artistsLive").classList.remove("yes-visibility-2")
+    document.getElementById("artistsDJSetsHeader").classList.add("no-visibility-2")
+    document.getElementById("artistsDJSetsHeader").classList.remove("yes-visibility-2")
+    document.getElementById("artistsDJSets").classList.add("no-visibility-2")
+    document.getElementById("artistsDJSets").classList.remove("yes-visibility-2")
+    //this.router.navigate(["artists/" + this.artist.name])
   }
 }
