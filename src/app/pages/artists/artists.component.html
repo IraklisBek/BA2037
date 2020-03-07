@@ -2,13 +2,17 @@
   <span style="font-size:1.2em">Live</span>
 </div>
 
-<div class="content" [@fadeInOnEnter]>
-  Live Content
+<div class="content row" [@fadeInOnEnter]>
+  <div *ngFor="let artistLive of artistsLive; let i=index" class="col-md-2 col-sm-4 col-12 text-center">
+    <app-artist [artist] = artistLive></app-artist>
+  </div>
 </div>
 <div class="header" [@fadeInOnEnter]>
   <span style="font-size:1.2em">DJ Sets</span>
 </div>
 
-<div class="content" [@fadeInOnEnter]>
-  DJ Sets Content
+<div class="content row" [@fadeInOnEnter]>
+  <div *ngFor="let artistDJSet of artistsDJSet; let i=index" class="col-md-2 col-sm-4 col-12 text-center">
+    <app-artist [artist] = artistDJSet></app-artist>
+  </div>
 </div>

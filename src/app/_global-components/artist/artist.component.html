@@ -1,3 +1,18 @@
-<p>
-  artist works!
-</p>
+<div class="row pointer" (click)="goToArtist()">
+  <div class="col-md-12 text-center">
+    <div style="padding:20px;">
+      <div class="row" (mouseEnter)="enter()">
+        <div class="col-md-12 text-center">
+          <div class="textWithBlurredBg">
+            <img src="../../../assets/Images/Artists/{{artist.photo}}" class="artist-img" [@fadeInOnEnter] id={{artist.id}}>
+            <!-- <h2><span style="font-size:10px;" class="eye">View</span></h2> -->
+            <!-- <img src="../../../assets/Images/view.png" class="eye"> -->
+          </div>
+        </div>
+        <div class="col-md-12 text-center name" (mouseenter)="enter()" (mouseleave)="leave()">
+          {{artist.name}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

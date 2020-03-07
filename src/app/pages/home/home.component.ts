@@ -30,4 +30,12 @@ export class HomeComponent implements OnInit {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
   }
+  goToFacebook() {
+    window.open("https://facebook.com/BA2037/", "_blank");
+  }
+
+  goToSoundcloud() {
+    window.open("https://soundcloud.com/ba2037/", "_blank");
+  }
+
 }

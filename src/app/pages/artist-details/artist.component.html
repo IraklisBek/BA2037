@@ -1,0 +1,27 @@
+<div class="header" style="text-align: center;" [@fadeInOnEnter]>
+  <div class="row pointer" (click)="goBack()">
+    <div class="col-md-1 col-sm-1 col-1 my-auto pointer">
+      <img src="../../../assets/Images/back.png" class="back">
+    </div>
+    <div class="col-md-11 col-sm-11 col-11 my-auto">
+      <div style="font-size:1.2em; margin-left:-11.3%">{{artist.name}}</div>
+    </div>
+  </div>
+</div>
+
+<div class="row m-t-40" [@fadeInOnEnter]>
+  <div class="col-md-3 text-center">
+    <img src="../../../assets/Images/Artists/{{artist.photo}}" class="artist-img">
+    <div *ngIf="artist.soundcloud; let soundcloud" class="links" (click)="goToLink(soundcloud)"><br>{{soundcloud}}</div>
+    <div *ngIf="artist.mixcloud; let mixcloud" class="links" (click)="goToLink(mixcloud)"><br>{{mixcloud}}</div>
+    <div *ngIf="artist.youtube; let youtube" class="links" (click)="goToLink(youtube)"><br>{{youtube}}</div>
+    <div *ngIf="artist.facebook; let facebook" class="links" (click)="goToLink(facebook)"><br>{{facebook}}</div>
+
+  </div>
+  <div class="col-9" style="color:var(--my-grey)">
+    <div *ngFor="let line of artist.description">
+      {{line}}
+      <div class="seperator" style="opacity:0.3;   border-bottom: 1px dashed rgb(122, 122, 122); padding-top:15px; margin-bottom:15px;"></div>
+    </div>
+  </div>
+</div>

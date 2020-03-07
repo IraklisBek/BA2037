@@ -4,6 +4,7 @@
   --my-black: #232323;
   --my-black-opacity: rgba(0, 0, 0, 0.8);
   --my-grey: #ebebeb;
+  --my-blue: #4f91b7;
 }
 
 body {
@@ -124,14 +125,31 @@ body {
 .underline {
   text-decoration: underline;
 }
-
+.back{
+  cursor: pointer;
+}
 @media (min-width: 480px) and (max-width: 4800px) {
   .header {
     border-top: 1px solid rgb(122, 122, 122);
+  }
+  .back {
+    width: 30px;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .m-t-nav-mobile {
     padding-top: 40%;
   }
+  .back {
+    width: 20px;
+  }
+}
+
+.links{
+  text-align: left !important; color:var(--my-blue); text-decoration: underline; cursor:pointer;   font-weight: bold;
+
+}
+
+.links:hover{
+  color:var(--my-grey)
 }

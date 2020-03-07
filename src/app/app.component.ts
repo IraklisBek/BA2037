@@ -32,7 +32,8 @@ export class AppComponent {
         var childDiv = menuItems[i];
         childDiv.classList.remove("underline")
       }
-      activeNavbarItem.classList.add("underline");
+      if (activeNavbarItem != undefined)
+        activeNavbarItem.classList.add("underline");
 
       if (this.route != '/home') {
         this.blur_bg.classList.add("yes-visibility-2");

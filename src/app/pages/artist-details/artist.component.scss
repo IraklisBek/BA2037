@@ -1,0 +1,12 @@
+.artist-img {
+  width: 100%;
+  transition: 0.3s;
+  border-radius: 50%;
+  object-fit: cover;
+  padding:20px;
+}
+@media (min-width: 320px) and (max-width: 576px) {
+  .artist-img {
+    width: 60%;
+  }
+}
