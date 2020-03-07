@@ -1,0 +1,166 @@
+[
+    {
+        "id": "event_1",
+        "type": "sunday",
+        "name": "Experimental Sundays Vol. 1 w/",
+        "artists": ["Silence Of The Goat", "MX", "Melmaid", "Ouroboros", "Waiting Room", "Ntavisia", "Konops"],
+        "mixcloud": "https://www.mixcloud.com/BA2037/playlists/experimental-sundays-vol-1",
+        "photos_folder": "esv1",
+        "description": ["Experimental Sundays!", "Μουσικές πειραματικές συναντήσεις Κυριακή απόγευμα στην αγαπημένη μας υπόγα..."],
+        "poster": "1.jpg"
+    },
+    {
+        "id": "event_1",
+        "type": "",
+        "name": "Party at University of Crete",
+        "artists": ["Complex Restistance", "MX", "Melmaid", "Ouroboros", "Waiting Room", "Ntavisia", "Konops", "Nishta", "Sirap"],
+        "mixcloud": "",
+        "photos_folder": "",
+        "description": "",
+        "poster": ""
+    },
+    {
+        "id": "event_1",
+        "type": "sunday",
+        "name": "Experimental Sundays Vol. 1 w/",
+        "mixcloud": "",
+        "photos_folder": "",
+        "description": "",
+        "poster": ""
+    },
+    {
+        "id": "event_1",
+        "type": "sunday",
+        "name": "Experimental Sundays Vol. 1 w/",
+        "mixcloud": "",
+        "photos_folder": "",
+        "description": "",
+        "poster": ""
+    },
+    {
+        "id": "event_1",
+        "type": "sunday",
+        "name": "Experimental Sundays Vol. 1 w/",
+        "mixcloud": "",
+        "photos_folder": "",
+        "description": "",
+        "poster": ""
+    },
+    {
+        "id": "event_1",
+        "type": "sunday",
+        "name": "Experimental Sundays Vol. 1 w/",
+        "mixcloud": "",
+        "photos_folder": "",
+        "description": "",
+        "poster": ""
+    },
+    {
+        "id": "event_1",
+        "type": "sunday",
+        "name": "Experimental Sundays Vol. 1 w/",
+        "mixcloud": "",
+        "photos_folder": "",
+        "description": "",
+        "poster": ""
+    },
+    {
+        "id": "event_1",
+        "type": "",
+        "name": "",
+        "mixcloud": "",
+        "photos_folder": "",
+        "description": "",
+        "poster": ""
+    },
+    {
+        "id": "event_1",
+        "type": "",
+        "name": "",
+        "mixcloud": "",
+        "photos_folder": "",
+        "description": "",
+        "poster": ""
+    },
+    {
+        "id": "event_1",
+        "type": "",
+        "name": "",
+        "mixcloud": "",
+        "photos_folder": "",
+        "description": "",
+        "poster": ""
+    },
+    {
+        "id": "event_1",
+        "type": "",
+        "name": "",
+        "mixcloud": "",
+        "photos_folder": "",
+        "description": "",
+        "poster": ""
+    },
+    {
+        "id": "event_1",
+        "type": "",
+        "name": "",
+        "mixcloud": "",
+        "photos_folder": "",
+        "description": "",
+        "poster": ""
+    },
+    {
+        "id": "event_1",
+        "type": "sunday",
+        "name": "Experimental Sundays Vol. 1 w/",
+        "mixcloud": "",
+        "photos_folder": "",
+        "description": "",
+        "poster": ""
+    },
+    {
+        "id": "event_1",
+        "type": "",
+        "name": "",
+        "mixcloud": "",
+        "photos_folder": "",
+        "description": "",
+        "poster": ""
+    },
+    {
+        "id": "event_1",
+        "type": "sunday",
+        "name": "Experimental Sundays Vol. 1 w/",
+        "mixcloud": "",
+        "photos_folder": "",
+        "description": "",
+        "poster": ""
+    },
+    {
+        "id": "event_1",
+        "type": "",
+        "name": "",
+        "mixcloud": "",
+        "photos_folder": "",
+        "description": "",
+        "poster": ""
+    },
+    {
+        "id": "event_1",
+        "type": "",
+        "name": "",
+        "mixcloud": "",
+        "photos_folder": "",
+        "description": "",
+        "poster": ""
+    },
+    {
+        "id": "event_1",
+        "type": "",
+        "name": "",
+        "mixcloud": "",
+        "photos_folder": "",
+        "description": "",
+        "poster": ""
+    }
+]
