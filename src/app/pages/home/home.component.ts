@@ -35,11 +35,10 @@ export class HomeComponent implements OnInit {
       mergeMap((route) => route.data)
      )
      .subscribe((event) => {
-       this._seoService.updateTitle(event['title']);
-       this._seoService.updateOgUrl(event['ogUrl']);
-       this._seoService.updateOgImg(event['ogImg']);
+       this._seoService.updateOgUrl("https://ba2037.com/");
+       this._seoService.updateOgImg("${require(`/assets/Images/logo.png`)}");
        //Updating Description tag dynamically with title
-       this._seoService.updateDescription(event['title'] + event['description'])
+       this._seoService.updateDescription("BA 2037 Official Website | Self organized initiative organizing electronic music events, based in Heraklion, Greece")
      }); 
   }
 

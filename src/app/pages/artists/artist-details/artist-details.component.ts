@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ArtistModel } from 'src/app/_global-components/_models/artist.model';
+import { ArtistModel } from 'src/app/_models/artist.model';
 import { GetDataService } from 'src/app/_services/get-data.service';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { fadeInOnEnterAnimation } from 'angular-animations';
@@ -48,25 +48,31 @@ export class ArtistDetailsComponent implements OnInit {
     this.getDataService.getArtists().subscribe(res => {
       this.artists = res
       this.artist = this.getDataService.getArtist(res, this.artistName)
-      this.title.setTitle("BA 2037 | " + this.artist.name)
-      this.router.events.pipe(
-        filter((event) => event instanceof NavigationEnd),
-        map(() => this.route),
-        map((route) => {
-          while (route.firstChild) route = route.firstChild;
-          return route;
-        }),
-        filter((route) => route.outlet === 'primary'),
-        mergeMap((route) => route.data)
-       )
-       .subscribe((event) => {
-         this._seoService.updateTitle("BA 2037 | " + this.artist.name);
-         this._seoService.updateOgUrl("https://ba2037.com/artists/"+this.artist.name);
-         this._seoService.updateOgImg(this.artist.photo);
-         this._seoService.updateOgType("profile")
-         this._seoService.updateMusicMusician(this.artist.facebook)
-         this._seoService.updateDescription(this.artist.description.join(' '))
-       }); 
+      //this.title.setTitle("BA 2037 | " + this.artist.name)
+      this._seoService.updateTitle("BA 2037 | " + this.artist.name);
+      this._seoService.updateOgUrl("https://ba2037.com/artists/"+this.artist.name);
+      this._seoService.updateOgImg("${require(`/assets/Images/Artists/"+this.artist.photo+"`)}");
+      this._seoService.updateOgType("profile")
+      this._seoService.updateMusicMusician(this.artist.facebook)
+      this._seoService.updateDescription(this.artist.description.join(' '))
+      // this.router.events.pipe(
+      //   filter((event) => event instanceof NavigationEnd),
+      //   map(() => this.route),
+      //   map((route) => {
+      //     while (route.firstChild) route = route.firstChild;
+      //     return route;
+      //   }),
+      //   filter((route) => route.outlet === 'primary'),
+      //   mergeMap((route) => route.data)
+      //  )
+      //  .subscribe((event) => {
+      //    this._seoService.updateTitle("BA 2037 | " + this.artist.name);
+      //    this._seoService.updateOgUrl("https://ba2037.com/artists/"+this.artist.name);
+      //    this._seoService.updateOgImg("${require(`/assets/Images/Artists/`"+this.artist.photo+"``)}"   );
+      //    this._seoService.updateOgType("profile")
+      //    this._seoService.updateMusicMusician(this.artist.facebook)
+      //    this._seoService.updateDescription(this.artist.description.join(' '))
+      //  }); 
     })
   }
 

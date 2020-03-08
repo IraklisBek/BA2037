@@ -3,7 +3,7 @@ import { GetDataService } from 'src/app/_services/get-data.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { fadeInOnEnterAnimation } from 'angular-animations';
 import { Location } from '@angular/common';
-import { EventModel } from 'src/app/_global-components/_models/event.model';
+import { EventModel } from 'src/app/_models/event.model';
 import { Title } from '@angular/platform-browser';
 import { NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
@@ -52,22 +52,26 @@ export class EventDetailsComponent implements OnInit {
         this.artists = res
         this.lives = this.getDataService.getArtistsOfEventByPerformanceType(this.event, 'live', this.artists )
         this.djsets = this.getDataService.getArtistsOfEventByPerformanceType(this.event, 'djset', this.artists )
-        this.router.events.pipe(
-          filter((event) => event instanceof NavigationEnd),
-          map(() => this.route),
-          map((route) => {
-            while (route.firstChild) route = route.firstChild;
-            return route;
-          }),
-          filter((route) => route.outlet === 'primary'),
-          mergeMap((route) => route.data)
-         )
-         .subscribe((event) => {
-           this._seoService.updateTitle("BA 2037 | " + this.event.name);
-           this._seoService.updateOgUrl("https://ba2037.com/events/"+this.event.name);
-           this._seoService.updateOgImg(this.event.poster);
-           this._seoService.updateDescription(this.event.description.join(' '))
-         }); 
+        this._seoService.updateTitle("BA 2037 | " + this.event.name);
+        this._seoService.updateOgUrl("https://ba2037.com/events/"+this.event.name);
+        this._seoService.updateOgImg("${require(`/assets/Images/Events/"+this.event.poster+"`)}");
+        this._seoService.updateDescription(this.event.description.join(' '))
+        // this.router.events.pipe(
+        //   filter((event) => event instanceof NavigationEnd),
+        //   map(() => this.route),
+        //   map((route) => {
+        //     while (route.firstChild) route = route.firstChild;
+        //     return route;
+        //   }),
+        //   filter((route) => route.outlet === 'primary'),
+        //   mergeMap((route) => route.data)
+        //  )
+        //  .subscribe((event) => {
+        //    this._seoService.updateTitle("BA 2037 | " + this.event.name);
+        //    this._seoService.updateOgUrl("https://ba2037.com/events/"+this.event.name);
+        //    this._seoService.updateOgImg(this.event.poster);
+        //    this._seoService.updateDescription(this.event.description.join(' '))
+        //  }); 
       })
 
 

@@ -4,27 +4,34 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
-import { NavbarComponent } from './_global-components/navbar/navbar.component';
+import { NavbarComponent } from './pages/navbar/navbar.component';
 import { AboutComponent } from './pages/about/about.component';
-import { GlobalComponentsModule } from './_global-components/global-components.module';
-import { ArtistsComponent } from './pages/artists/artists.component';
+import { ArtistsComponent } from './pages/artists/main/artists.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { EventsComponent } from './pages/events/events.component';
-import { BlogComponent } from './pages/blog/blog.component';
+import { EventsComponent } from './pages/events/main/events.component';
+import { BlogComponent } from './pages/blog/main/blog.component';
 import { ToastrModule } from 'ngx-toastr';
 import { GetDataService } from './_services/get-data.service';
 import { HttpClientModule } from '@angular/common/http';
-import { ArtistDetailsComponent } from './pages/artist-details/artist-details.component';
-import { EventDetailsComponent } from './pages/event-details/event-details.component';
+import { ArtistDetailsComponent } from './pages/artists/artist-details/artist-details.component';
+import { EventDetailsComponent } from './pages/events/event-details/event-details.component';
+import { SEOService } from './_services/seo.service';
+import { ArtistComponent } from './pages/artists/artist/artist.component';
+import { EventComponent } from './pages/events/event/event.component';
+import { PostComponent } from './pages/blog/post/post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
     HomeComponent,
     AboutComponent,
     ArtistsComponent,
+    ArtistComponent,
     EventsComponent,
+    EventComponent,
     BlogComponent,
+    PostComponent,
     ArtistDetailsComponent,
     EventDetailsComponent
   ],
@@ -33,10 +40,9 @@ import { EventDetailsComponent } from './pages/event-details/event-details.compo
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    GlobalComponentsModule,
     ToastrModule.forRoot() // ToastrModule added
   ],
-  providers: [GetDataService],
+  providers: [GetDataService, SEOService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

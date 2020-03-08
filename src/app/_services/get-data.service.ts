@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ArtistModel } from '../_global-components/_models/artist.model';
-import { EventModel } from '../_global-components/_models/event.model';
+import { ArtistModel } from '../_models/artist.model';
+import { EventModel } from '../_models/event.model';
 
 @Injectable({
   providedIn: 'root'

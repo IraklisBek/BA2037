@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { fadeInOnEnterAnimation } from 'angular-animations';
-import { EventModel } from 'src/app/_global-components/_models/event.model';
+import { EventModel } from 'src/app/_models/event.model';
 import { GetDataService } from 'src/app/_services/get-data.service';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
