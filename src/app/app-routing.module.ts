@@ -6,6 +6,7 @@ import { ArtistsComponent } from './pages/artists/artists.component';
 import { EventsComponent } from './pages/events/events.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ArtistDetailsComponent } from './pages/artist-details/artist-details.component';
+import { EventDetailsComponent } from './pages/event-details/event-details.component';
 
 const routes: Routes = [
   {
@@ -13,11 +14,22 @@ const routes: Routes = [
     redirectTo: '/home',
     pathMatch: 'full'
   },
-  { path: 'home', component: HomeComponent },
+  {
+    path: 'home', component: HomeComponent,
+    data: {
+      title: 'BA 2037 | Home',
+      description: 'BA 2037 Official Website | Self organized initiative organizing electronic music events, based in Heraklion, Greece',
+      ogUrl: 'https://ba2037.com/',
+      ogImg: '../assets/Images/play-button.png'
+    }
+  },
   { path: 'about', component: AboutComponent },
   { path: 'artists', component: ArtistsComponent },
-  { path: 'artists/:name', component: ArtistDetailsComponent },
+  {
+    path: 'artists/:name', component: ArtistDetailsComponent
+  },
   { path: 'events', component: EventsComponent },
+  { path: 'events/:name', component: EventDetailsComponent },
   { path: 'blog', component: BlogComponent },
 
 ];

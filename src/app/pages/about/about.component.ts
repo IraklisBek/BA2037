@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { pulseOnEnterAnimation, fadeInOnEnterAnimation } from 'angular-animations';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-about',
@@ -9,7 +10,11 @@ import { pulseOnEnterAnimation, fadeInOnEnterAnimation } from 'angular-animation
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private title: Title
+  ) {
+    this.title.setTitle("BA 2037 | ?")
+   }
 
   ngOnInit() {
   }

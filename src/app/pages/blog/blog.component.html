@@ -3,5 +3,20 @@
 </div>
 
 <div class="content" [@fadeInOnEnter]>
-  BA2037 Posts Content
+  <div class="row">
+    <div *ngFor="let blog of blogs" class="col-md-12 col-sm-12 col-12 post">
+      <div class="row">
+        <div class="col-md-2 col-sm-2 col-12">
+          <img src="../../../assets/Images/Blog/{{blog.photo}}" style="width:100%; border-radius:8px;">
+        </div>
+        <div class="col-md-10 col-sm-10 col-12">
+          <div *ngFor="let line of blog.text">
+            {{line}}
+          </div>
+        </div>
+      </div>
+      <div style="position: absolute; bottom: 10px; right: 20px;">{{blog.date}}</div>
+
+    </div>
+  </div>
 </div>

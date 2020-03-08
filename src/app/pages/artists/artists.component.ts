@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { fadeInOnEnterAnimation } from 'angular-animations';
 import { GetDataService } from 'src/app/_services/get-data.service';
 import { ActivatedRoute } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-artists',
@@ -15,8 +16,11 @@ export class ArtistsComponent implements OnInit {
   public artistsDJSet
   constructor(
     private dataService: GetDataService,
-    private route: ActivatedRoute
-  ) { }
+    private route: ActivatedRoute,
+    private title: Title
+  ) {
+    this.title.setTitle("BA 2037 | Friends")
+   }
 
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
@@ -25,7 +29,6 @@ export class ArtistsComponent implements OnInit {
           window.scrollTo(0, params["scroll"])
         }
       }, 100)
-
     })
     this.dataService.getArtists().subscribe(res => {
       this.artists = res;

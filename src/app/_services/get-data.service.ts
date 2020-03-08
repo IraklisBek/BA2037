@@ -10,6 +10,7 @@ export class GetDataService {
 
   artistsUrl = 'assets/data/artists.json';
   eventsUrl = 'assets/data/events.json';
+  blogUrl = 'assets/data/blog.json';
 
 
   constructor(private http: HttpClient) { }
@@ -20,7 +21,6 @@ export class GetDataService {
 
   getArtist(artists, artistName){
     var artist = artists.filter(e => e.name == artistName)
-    console.log(artist)
     return artist[0]
   }
 
@@ -55,7 +55,22 @@ export class GetDataService {
     return eventType
   }
 
+  getArtistsOfEventByPerformanceType(event, performanceType, artists){
+    var returnArtists = []
+    for(let artist of event.artists){
+      console.log(artist)
+      var getArtist = this.getArtist(artists, artist)
+      if(getArtist.type==performanceType){
+        returnArtists.push(getArtist)
+      }
+    }
+    return returnArtists
+  }
 
+
+  getBlog() {
+    return this.http.get(this.blogUrl);
+  }
 
 
 

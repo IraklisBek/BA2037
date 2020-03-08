@@ -1,0 +1,20 @@
+@media (min-width: 768px) and (max-width: 3000px) {
+    .col-md-2 {
+      max-width: 20% !important;
+      width: 20% !important;
+      flex: 0 0 20% !important;
+    }
+  
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .details{
+      text-align: center;
+      overflow-y: scroll; 
+      max-height: 100%;
+    }
+  }
+  .details{
+    position: fixed;  
+  
+  }
+  

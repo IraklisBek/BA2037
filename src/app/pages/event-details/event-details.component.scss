@@ -1,0 +1,35 @@
+.artist-img {
+  width: 80%;
+  transition: 0.3s;
+  object-fit: cover;
+  padding: 20px;
+}
+
+.align{
+  text-align: left !important;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .artist-img {
+    width: 60%;
+  }
+  .mobile-center {
+    text-align: center;
+  }
+  .align{
+    text-align: center !important;
+  }
+}
+
+.artist-name{
+  font-size:1.2em;
+  font-weight: bold;
+}
+
+.description{
+  color: var(--my-black);
+  border-radius:8px;
+  background-color:var(--my-grey);
+  padding:20px;
+}
+
