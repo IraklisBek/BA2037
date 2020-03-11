@@ -61,7 +61,6 @@ export class GetDataService {
   getArtistsOfEventByPerformanceType(event, performanceType, artists){
     var returnArtists = []
     for(let artist of event.artists){
-      console.log(artist)
       var getArtist = this.getArtist(artists, artist)
       if(getArtist.type==performanceType){
         returnArtists.push(getArtist)

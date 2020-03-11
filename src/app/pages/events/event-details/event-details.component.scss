@@ -3,6 +3,7 @@
   transition: 0.3s;
   object-fit: cover;
   padding: 20px;
+  padding-top:0;
 }
 
 .align{
@@ -24,12 +25,13 @@
 .artist-name{
   //font-size:1.2em;
   font-weight: bold;
+  color: var(--my-blue)
 }
 
 .description{
   color: var(--my-grey);
-  border-radius:8px;
-  //background-color:var(--my-grey);
-  // padding:20px;
+  color: var(--my-black);
+  background-color:var(--my-grey);
+  padding:20px;
 }
 

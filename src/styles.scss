@@ -142,6 +142,10 @@ body {
   .back {
     width: 30px;
   }
+  
+.my-text-justify{
+  text-align: justify;
+}
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .m-t-nav-mobile {
@@ -160,6 +164,7 @@ body {
 
 .links{
   text-align: left ; color:var(--my-blue); text-decoration: underline; cursor:pointer;   font-weight: bold;
+  word-wrap:break-word;
 
 }
 
@@ -167,10 +172,9 @@ body {
   color:var(--my-grey)
 }
 
-.text-justify{
-  text-align: justify;
+.p-20{
+  padding:20px;
 }
-
 // input.ng-touched.ng-invalid{
 //   border-color: #BD362F;
 //   background-color: #BD362F;

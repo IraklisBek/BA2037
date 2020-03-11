@@ -8,14 +8,18 @@
     </div>
   </div>
 </div>
+<div class="content">
 
-<div class="row m-t-40" [@fadeInOnEnter]>
-  <!-- style="width:100%" -->
-  <div class="col-md-4 col-sm-4 col-12 text-center">
-    <img src="../../../assets/Images/Events/{{event.poster}}" class="artist-img">
-    <!-- <div style="padding:10px; color:var(--my-grey)">{{event.date}}</div> -->
-    <!-- <div *ngIf="event.mixcloud; let mixcloud" class="links" (click)="goToLink(mixcloud)"><br>{{mixcloud}}</div> -->
-    <!-- <div *ngIf="isMobile" class="seperator dashed-line"></div>
+
+  <div class="row m-t-40" [@fadeInOnEnter]>
+    <!-- style="width:100%" -->
+    <div class="col-md-4 col-sm-4 col-12 text-center">
+      <img src="../../../assets/Images/Events/{{event.poster}}" class="artist-img">
+      <div style="color: var(--my-grey); font-weight:bold">Listen at:</div>
+      <div class="links p-20" (click)=goToLink(event.mixcloud)>{{event.mixcloud}}</div>
+      <!-- <div style="padding:10px; color:var(--my-grey)">{{event.date}}</div> -->
+      <!-- <div *ngIf="event.mixcloud; let mixcloud" class="links" (click)="goToLink(mixcloud)"><br>{{mixcloud}}</div> -->
+      <!-- <div *ngIf="isMobile" class="seperator dashed-line"></div>
 
     <div class="description">
       <div *ngFor="let line of event.description" class="align">
@@ -24,63 +28,64 @@
     </div> -->
 
 
-  </div>
-  <div class="col-8 col-sm-8 col-12 mobile-center" style="color:var(--my-grey)">
+    </div>
+    <div class="col-8 col-sm-8 col-12 mobile-center" style="color:var(--my-grey)">
 
 
-    <!-- <div class="header" [@fadeInOnEnter] style="margin-bottom:20px;">
+      <!-- <div class="header" [@fadeInOnEnter] style="margin-bottom:20px;">
       <span style="font-size:1.2em">Live Acts</span>
     </div> -->
-    <div class="description">
-      <div *ngFor="let line of event.description" class="align">
-        <div class="text-justify">{{line}}</div>
-      </div>
-    </div>
-
-    <div class="seperator dashed-line"></div>
-
-    <div *ngFor="let live of lives">
-      <div class="artist-name">{{live.name}} (Live)</div>
-      <div class="m-t-15">
-        <div *ngFor="let line of live.description">
-          <div class="text-justify">{{line}}</div>
+      <div class="description">
+        <div *ngFor="let line of event.description" class="align">
+          <div class="my-text-justify">{{line}}</div>
         </div>
-      </div>
-      <div class="m-t-15">
-        <div *ngIf="live.soundcloud; let soundcloud" class="links" (click)="goToLink(soundcloud)">{{soundcloud}}</div>
-        <div *ngIf="live.mixcloud; let mixcloud" class="links" (click)="goToLink(mixcloud)">{{mixcloud}}</div>
-        <div *ngIf="live.facebook; let facebook" class="links" (click)="goToLink(facebook)">{{facebook}}</div>
-        <div *ngIf="live.youtube; let youtube" class="links" (click)="goToLink(youtube)">{{youtube}}</div>
       </div>
 
       <div class="seperator dashed-line"></div>
-    </div>
+
+      <div *ngFor="let live of lives">
+        <div class="artist-name">{{live.name}} (Live)</div>
+        <div class="m-t-15">
+          <div *ngFor="let line of live.description">
+            <div class="my-text-justify">{{line}}</div>
+          </div>
+        </div>
+        <div class="m-t-15">
+          <div *ngIf="live.soundcloud; let soundcloud" class="links" (click)="goToLink(soundcloud)">{{soundcloud}}</div>
+          <div *ngIf="live.mixcloud; let mixcloud" class="links" (click)="goToLink(mixcloud)">{{mixcloud}}</div>
+          <div *ngIf="live.facebook; let facebook" class="links" (click)="goToLink(facebook)">{{facebook}}</div>
+          <div *ngIf="live.youtube; let youtube" class="links" (click)="goToLink(youtube)">{{youtube}}</div>
+        </div>
+
+        <div class="seperator dashed-line"></div>
+      </div>
 
 
 
-    <!-- <div class="header" [@fadeInOnEnter] style="margin-bottom:20px;">
+      <!-- <div class="header" [@fadeInOnEnter] style="margin-bottom:20px;">
       <span style="font-size:1.2em">DJ Sets</span>
     </div> -->
 
 
-    <div *ngFor="let set of djsets">
-      <div class="artist-name">{{set.name}} (DJ Set)</div>
-      <div class="m-t-15">
-        <div *ngFor="let line of set.description">
-          <div class="text-justify">{{line}}</div>
+      <div *ngFor="let set of djsets">
+        <div class="artist-name">{{set.name}} (DJ Set)</div>
+        <div class="m-t-15">
+          <div *ngFor="let line of set.description">
+            <div class="my-text-justify">{{line}}</div>
+          </div>
         </div>
+        <div class="m-t-15">
+          <div *ngIf="set.soundcloud; let soundcloud" class="links" (click)="goToLink(soundcloud)">{{soundcloud}}</div>
+          <div *ngIf="set.mixcloud; let mixcloud" class="links" (click)="goToLink(mixcloud)">{{mixcloud}}</div>
+          <div *ngIf="set.facebook; let facebook" class="links" (click)="goToLink(facebook)">{{facebook}}</div>
+          <div *ngIf="set.youtube; let youtube" class="links" (click)="goToLink(youtube)">{{youtube}}</div>
+        </div>
+        <div class="seperator dashed-line"></div>
       </div>
-      <div class="m-t-15">
-        <div *ngIf="set.soundcloud; let soundcloud" class="links" (click)="goToLink(soundcloud)">{{soundcloud}}</div>
-        <div *ngIf="set.mixcloud; let mixcloud" class="links" (click)="goToLink(mixcloud)">{{mixcloud}}</div>
-        <div *ngIf="set.facebook; let facebook" class="links" (click)="goToLink(facebook)">{{facebook}}</div>
-        <div *ngIf="set.youtube; let youtube" class="links" (click)="goToLink(youtube)">{{youtube}}</div>
-      </div>
-      <div class="seperator dashed-line"></div>
+
+
+
     </div>
-
-
-
   </div>
 
 </div>
