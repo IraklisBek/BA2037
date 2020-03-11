@@ -83,6 +83,9 @@ export class HomeComponent implements OnInit {
     window.open("https://soundcloud.com/ba2037/", "_blank");
   }
 
+  public goToMixcloud() {
+    window.open("https://mixcloud.com/BA2037/", "_blank");
+  }
 
 
 }
