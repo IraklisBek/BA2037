@@ -19,6 +19,10 @@ import { SEOService } from './_services/seo.service';
 import { ArtistComponent } from './pages/artists/artist/artist.component';
 import { EventComponent } from './pages/events/event/event.component';
 import { PostComponent } from './pages/blog/post/post.component';
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+import { environment } from 'src/environments/environment';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -40,7 +44,10 @@ import { PostComponent } from './pages/blog/post/post.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ToastrModule.forRoot() // ToastrModule added
+    ToastrModule.forRoot(), // ToastrModule added
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
+    FormsModule
   ],
   providers: [GetDataService, SEOService],
   bootstrap: [AppComponent]

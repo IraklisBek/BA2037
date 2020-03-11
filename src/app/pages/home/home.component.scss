@@ -27,7 +27,7 @@ input:focus {
 }
 
 .no-border {
-  border: 0;
+  border: 1px;
   box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
 }
 
@@ -40,7 +40,7 @@ input:focus {
   color: var(--my-black);
   text-align: center;
   width: 50%;
-  margin-left: 25%;
+  // margin-left: 25%;
   border-radius: 4px;
   margin-top: 30px;
   cursor: pointer;

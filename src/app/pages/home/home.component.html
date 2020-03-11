@@ -14,12 +14,18 @@
 
       <span>Subscribe to Mailing List</span>
       <br>
-      <input type="email" class="form-control no-border" placeholder="Your E-mail" id="mail">
-      <hr class="line">
-      <div class="subscribe-btn shadow-circle-2" (click)="subscribe()">
-        Subscribe
-      </div>
+      <form #form="ngForm" (submit)="subscribe(form)">
+        <input name="email" #email="ngModel" [(ngModel)]="getDatService.formData.email" type="email"
+          class="form-control no-border" placeholder="Your E-mail" id="mail" required>
+        <hr class="line">
+        <button type="submit" class="subscribe-btn shadow-circle-2">
+          Subscribe
+        </button>
+      </form>
     </div>
   </div>
-
 </div>
+
+<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfh4T3FP6B_rnbLMlWyDJxmY9gNmvgf3-g78LfLh4S7zncqBg/viewform" width="500px; height:100px;">
+
+</iframe> -->

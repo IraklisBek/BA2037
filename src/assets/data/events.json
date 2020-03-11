@@ -189,6 +189,7 @@
         "id": "event_18",
         "type": "party",
         "name": "Post Valentine Party at University of Crete",
+        "artists": ["Reaktiv.", "Koketa MC", "Sirap", "Ntavisia", "Konops", "Cliqa", "Melmaid"],
         "mixcloud": "https://www.mixcloud.com/BA2037/playlists/post-valentine-at-uoc",
         "photos_folder": "",
         "description": ["Μεταερωτικό Πάρτυ Της ΒΑ2037 Με Την Υποστήριξη Του ΡΑ.ΣΤΑ.ΠΑΝ.Κ. Για Να Μπεί Καλά Η Χρονιά"],

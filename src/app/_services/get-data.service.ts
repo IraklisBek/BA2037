@@ -2,11 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ArtistModel } from '../_models/artist.model';
 import { EventModel } from '../_models/event.model';
+import { Email } from '../_models/email.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GetDataService {
+
+  public formData: Email
 
   artistsUrl = 'assets/data/artists.json';
   eventsUrl = 'assets/data/events.json';
