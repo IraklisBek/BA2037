@@ -77,7 +77,11 @@
               {{mixcloud}}</div>
           </div>
           <div *ngIf="live.youtube; let youtube" class="row" style="margin-top:10px;">
-            <div class="links col-md-10 col-sm-12 col-12 my-auto" (click)="goToLink(youtube)">
+            <div class="col-md-1 col-sm-12 col-12 my-auto p-l-0">
+              <img src="../../../assets/Images/youtube.png" style="width:30px;">
+            </div>
+            <div class="links col-md-10 col-sm-12 col-12 my-auto"
+              (click)="goToLink(youtube)">
               {{youtube}}</div>
           </div>
           <div *ngIf="live.facebook; let facebook" class="row" style="margin-top:10px;">
@@ -129,7 +133,11 @@
               {{mixcloud}}</div>
           </div>
           <div *ngIf="set.youtube; let youtube" class="row" style="margin-top:10px;">
-            <div class="links col-md-10 col-sm-12 col-12 my-auto" (click)="goToLink(youtube)">
+            <div class="col-md-1 col-sm-12 col-12 my-auto">
+              <img src="../../../assets/Images/youtube.png" style="width:30px; margin-left:15px;">
+            </div>
+            <div class="links col-md-10 col-sm-12 col-12 my-auto"
+              (click)="goToLink(youtube)">
               {{youtube}}</div>
           </div>
           <div *ngIf="set.facebook; let facebook" class="row" style="margin-top:10px;">

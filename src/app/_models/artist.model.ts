@@ -2,7 +2,7 @@ export class ArtistModel{
     id: string
     type: string
     name: string
-    soundcloud: string
+    soundcloud: Array<string>
     mixcloud: string
     facebook: string
     photo: string

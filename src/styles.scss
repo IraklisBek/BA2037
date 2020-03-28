@@ -32,7 +32,7 @@ body {
   top: -80px;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.91);
   margin-top: 56px;
   margin-bottom: 1120px;
   z-index: -1;
@@ -163,7 +163,7 @@ body {
 }
 
 .links{
-  text-align: left ; color:var(--my-grey); text-decoration: underline; cursor:pointer;   font-weight: bold;
+  text-align: left ; color:var(--my-grey); text-decoration: underline; cursor:pointer;   font-weight: 300;
   word-wrap:break-word;
 
 }
