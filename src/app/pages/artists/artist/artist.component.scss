@@ -28,12 +28,12 @@
   }
 }
 .textWithBlurredBg:hover .artist-img {
-  filter: blur(2px) brightness(60%);
+  // filter: blur(2px) brightness(60%);
   box-shadow: 0 0 16px var(--my-grey);
 }
 
 .blur-on-text-hover {
-  filter: blur(2px) brightness(60%);
+  // filter: blur(2px) brightness(60%);
   box-shadow: 0 0 16px var(--my-grey);
   border-radius: 50%;
 }

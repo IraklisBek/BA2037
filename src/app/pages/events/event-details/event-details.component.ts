@@ -52,26 +52,12 @@ export class EventDetailsComponent implements OnInit {
         this.artists = res
         this.lives = this.getDataService.getArtistsOfEventByPerformanceType(this.event, 'live', this.artists )
         this.djsets = this.getDataService.getArtistsOfEventByPerformanceType(this.event, 'djset', this.artists )
-        this._seoService.updateTitle("BA 2037 | " + this.event.name);
-        this._seoService.updateOgUrl("https://ba2037.com/events/"+this.event.name);
-        this._seoService.updateOgImg("${require(`/assets/Images/Events/"+this.event.poster+"`)}");
-        this._seoService.updateDescription(this.event.description.join(' '))
-        // this.router.events.pipe(
-        //   filter((event) => event instanceof NavigationEnd),
-        //   map(() => this.route),
-        //   map((route) => {
-        //     while (route.firstChild) route = route.firstChild;
-        //     return route;
-        //   }),
-        //   filter((route) => route.outlet === 'primary'),
-        //   mergeMap((route) => route.data)
-        //  )
-        //  .subscribe((event) => {
-        //    this._seoService.updateTitle("BA 2037 | " + this.event.name);
-        //    this._seoService.updateOgUrl("https://ba2037.com/events/"+this.event.name);
-        //    this._seoService.updateOgImg(this.event.poster);
-        //    this._seoService.updateDescription(this.event.description.join(' '))
-        //  }); 
+        this._seoService.generateTags("article", 
+        "BA 2037", 
+        "BA 2037 | Event: " + this.event.name, 
+        this.event.descriprion, 
+        "<%= require('/assets/Images/Events/"+this.event.photo+"') %>", 
+        "https://ba2037.com")
       })
 
 

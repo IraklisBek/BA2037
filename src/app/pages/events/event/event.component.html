@@ -5,10 +5,14 @@
           <div class="col-md-12 text-center">
             <div class="textWithBlurredBg">
               <img src="../../../assets/Images/Events/{{event.poster}}" class="artist-img" [@fadeInOnEnter] id={{event.id}} style="margin-right:10px !important">
-              <div style="font-size:13px;" class="eye"><img src="../../../assets/Images/eye.svg" style="width:50%; margin-left:-25%;;"></div>
+              <div style="font-size:17px; text-align: center;" class="eye">
+                <!-- <div style="margin-top:20%; padding:10px; color:var(--my-grey); border-radius: 2px;">
+                  View More
+                </div> -->
+              </div>
             </div>
-          </div>
-          <div class="col-md-12 text-center name" (mouseenter)="enter()" (mouseleave)="leave()" style="line-height:1.5rem">
+          </div> 
+          <div class="col-md-12 text-center name links" (mouseenter)="enter()" (mouseleave)="leave()" style="line-height:1.5rem">
             {{event.name}}
           </div>
         </div>

@@ -10,6 +10,7 @@ import { HttpClient, HttpRequest } from '@angular/common/http';
 import { GetDataService } from 'src/app/_services/get-data.service';
 import { NgForm } from '@angular/forms';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { Route } from '@angular/compiler/src/core';
 
 @Component({
   selector: 'app-home',
@@ -21,31 +22,21 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private toastr: ToastrService,
-    private title: Title,
     private _seoService: SEOService,
     public getDatService: GetDataService,
-    private firestore:AngularFirestore
+    private firestore:AngularFirestore,
+    private router: Router
   ) {
-    title.setTitle("BA 2037 | Home")
   }
 
   ngOnInit() {
-    // this.router.events.pipe(
-    //   filter((event) => event instanceof NavigationEnd),
-    //   map(() => this.route),
-    //   map((route) => {
-    //     while (route.firstChild) route = route.firstChild;
-    //     return route;
-    //   }),
-    //   filter((route) => route.outlet === 'primary'),
-    //   mergeMap((route) => route.data)
-    // )
-    //   .subscribe((event) => {
     this.resetForm()
-    this._seoService.updateOgUrl("https://ba2037.com/");
-    this._seoService.updateOgImg("${require(`/assets/Images/logo.png`)}");
-    this._seoService.updateDescription("BA 2037 Official Website | Self organized initiative organizing electronic music events, based in Heraklion, Greece")
-    // });
+    this._seoService.generateTags("article", 
+    "BA 2037", 
+    "BA 2037 | Home", 
+    "BA 2037 Official Website - The target is the organization of electronic music events and the cooperation with other equivalent groups, teams and initiatives that exists in Heraklion which serves the same goals, modes of operation and existence.    ", 
+    "https://thumbnailer.mixcloud.com/unsafe/1200x628/profile/c/1/3/0/cea5-de62-494b-9d46-2f95a8d73d46", 
+    "https://ba2037.com")
   }
 
   public resetForm(form?: NgForm) {
@@ -85,6 +76,10 @@ export class HomeComponent implements OnInit {
 
   public goToMixcloud() {
     window.open("https://mixcloud.com/BA2037/", "_blank");
+  }
+
+  public goToAbout() {
+    this.router.navigate(['/about'])
   }
 
 

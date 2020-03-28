@@ -13,9 +13,11 @@ export class NavbarComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    var parentWidth = document.getElementById("container").offsetWidth
+    document.getElementById("my-menu").style.width = parentWidth + "px"
     setInterval(function(){
       var parentWidth = document.getElementById("container").offsetWidth
-      var menu = document.getElementById("my-menu").style.width = parentWidth + "px"
+      document.getElementById("my-menu").style.width = parentWidth + "px"
     }, 1)
 
 

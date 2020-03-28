@@ -13,6 +13,7 @@
   position: relative;
   transition: 0.3s;
   margin: 4px;
+  background-color: var(--my-grey);
 }
 
 .textWithBlurredBg .artist-img {
@@ -27,12 +28,12 @@
   }
 }
 .textWithBlurredBg:hover .artist-img {
-  filter: blur(2px) brightness(60%);
+  // filter: blur(2px) brightness(60%);
   box-shadow: 0 0 16px var(--my-grey);
 }
 
 .blur-on-text-hover {
-  filter: blur(2px) brightness(60%);
+  // filter: blur(2px) brightness(60%);
   box-shadow: 0 0 16px var(--my-grey);
 }
 
@@ -51,7 +52,7 @@
 }
 
 .textWithBlurredBg:hover :not(.artist-img) {
-  opacity: 0.7;
+  opacity: 0.85;
 }
 
 .eye {
@@ -59,7 +60,7 @@
   top:0 !important;
   color:var(--my-grey);
   font-weight: bold;
-  width:100%;
+  width:90%;
   height:100%;
   line-height: 100%;
   background-color: var(--my-black);

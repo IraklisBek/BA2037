@@ -9,15 +9,39 @@
   </div>
 </div>
 
-<div class="row m-t-40" [@fadeInOnEnter] >
+<div class="row m-t-40" [@fadeInOnEnter]>
   <!-- style="width:100%" -->
   <div class="col-md-4 col-sm-4 col-12 text-center">
     <img src="../../../assets/Images/Artists/{{artist.photo}}" class="artist-img">
-    <div *ngIf="artist.soundcloud; let soundcloud" class="links" (click)="goToLink(soundcloud)"><br>{{soundcloud}}</div>
-    <div *ngIf="artist.mixcloud; let mixcloud" class="links" (click)="goToLink(mixcloud)"><br>{{mixcloud}}</div>
-    <div *ngIf="artist.youtube; let youtube" class="links" (click)="goToLink(youtube)"><br>{{youtube}}</div>
-    <div *ngIf="artist.facebook; let facebook" class="links" (click)="goToLink(facebook)"><br>{{facebook}}</div>
-    <div *ngIf="isMobile" class="seperator dashed-line"></div>
+    <div *ngIf="artist.soundcloud; let soundcloud" class="row" style="margin-top:10px;">
+      <div class="col-md-2 col-sm-12 col-12 my-auto">
+        <img src="../../../assets/Images/soundcloud2.png" style="width:30px; margin-left:15px;">
+      </div>
+      <div class="links col-md-10 col-sm-12 col-12 my-auto" (click)="goToLink(soundcloud)">{{soundcloud}}</div>
+    </div>
+    <div *ngIf="artist.mixcloud; let mixcloud" class="row" style="margin-top:10px;">
+      <div class="col-md-2 col-sm-12 col-12 my-auto">
+        <img src="../../../assets/Images/mixcloud.png" style="width:30px; margin-left:15px;">
+      </div>
+      <div class="links col-md-10 col-sm-12 col-12 my-auto"
+        (click)="goToLink(mixcloud)">
+        {{mixcloud}}</div>
+    </div>
+    <div *ngIf="artist.youtube; let youtube" class="row" style="margin-top:10px;">
+      <div class="links col-md-10 col-sm-12 col-12 my-auto"
+        (click)="goToLink(youtube)">
+        {{youtube}}</div>
+    </div>
+    <div *ngIf="artist.facebook; let facebook" class="row" style="margin-top:10px;">
+      <div class="col-md-2 col-sm-12 col-12 my-auto">
+        <img src="../../../assets/Images/facebook.png" style="width:30px; margin-left:15px;">
+      </div>
+      <div class="links col-md-10 col-sm-12 col-12 my-auto"
+        (click)="goToLink(facebook)">
+        {{facebook}}</div>
+      <div *ngIf="isMobile" class="seperator dashed-line"></div>
+    </div>
+
 
   </div>
   <div class="col-8 col-sm-8 col-12 mobile-center" style="color:var(--my-grey)">

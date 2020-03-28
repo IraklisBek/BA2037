@@ -163,13 +163,13 @@ body {
 }
 
 .links{
-  text-align: left ; color:var(--my-blue); text-decoration: underline; cursor:pointer;   font-weight: bold;
+  text-align: left ; color:var(--my-grey); text-decoration: underline; cursor:pointer;   font-weight: bold;
   word-wrap:break-word;
 
 }
 
 .links:hover{
-  color:var(--my-grey)
+  color:var(--my-blue)
 }
 
 .p-20{
