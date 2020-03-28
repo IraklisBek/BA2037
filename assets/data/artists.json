@@ -164,15 +164,15 @@
         "description": ["Waves sweeping through an ever-changing sonic scenery . Glimpses of unity shown through the details."],
         "youtube": ""
     },
-    {
+    { 
         "id": "user_14",
         "type": "live",
         "name": "V.V.I.A. (Venus Volcanism + In Atlas)",
-        "soundcloud": "https://soundcloud.com/venusvolcanism, https://soundcloud.com/inatlas",
+        "soundcloud": "https://soundcloud.com/womenofvvia",
         "mixcloud": "",
-        "facebook": "https://www.facebook.com/venusvolcanism, https://www.facebook.com/inatlasmusic",
+        "facebook": ["https://www.facebook.com/venusvolcanism", "https://www.facebook.com/inatlasmusic"],
         "photo": "vvia.png",
-        "description": ["-"],
+        "description": ["Venus Volcanism & In Atlas", "Οι V.V.I.A είναι το μουσικό σχήμα της Ελληνίδας Venus Volcanism και της Δανής In Atlas. Συναντήθηκαν στην Αθήνα πριν από τρία χρόνια. Έκτοτε με τη μουσική τους σύμπραξη προσπαθούν να δημιουργήσουν ένα περιβάλλον στο οποίο εξερευνούν, αμφισβητούν και επαναπροσδιορίζουν έννοιες όπως ο έρωτας,το μίσος, η ύπαρξη, ο ανθρωπισμός μέσα από το πρίσμα lo-fi συνθέσεων. Η μουσική τους περιέχει στοιχεία όπως θέρεμιν, samples, συνθεσάιζερ και φωνητικά. Έχουν κυκλοφορήσει επίσημα το κομμάτι «Reconstruction», το οποίο συμπεριλαμβάνεται στο δεύτερο Phormix Tape «Light of Consiousness». Πρόσφατα κυκλοφόρησαν από τη META MOTO, τα κομμάτια «Psychopath» και «One Thousand Roles To Play». Τον Ιανουάριο του 2019 η Δανή σκηνοθέτης Frigge Fri έδωσε εικόνα στο «One Thousand Roles To Play» δημιουργώντας ένα μουσικό βίντεο-διαμαρτυρία ενάντια στους μηχανισμούς καταπίεσης και τα στερεότυπα του κοινωνικού φύλου(gender)."],
         "youtube": "https://www.youtube.com/channel/UC_kZBPBqbf8r2OA3p2nFpxg"
     },
     {
