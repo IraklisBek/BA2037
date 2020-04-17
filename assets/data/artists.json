@@ -40,7 +40,7 @@
         "mixcloud": "",
         "facebook": "https://www.facebook.com/anfs.mdl",
         "photo": "anfs.png",
-        "description": ["-"],
+        "description": ["ANFS is the moniker of Athenian industrial/techno/experimental musician George Anifantis. He has been a staple of the darker corners of the scene since 2014, when his first EP came out on the Greek Modal Analysis. Over the past 4 years ANFS has made a handful of brilliant, banger EPs with equal degrees of Stygian depth and aggression. His creations are cathartic, usually building in intensity through clever, unobvious techniques of songcrafting, yet often they begin from a point of high intensity. ANFS is one of the masters of nasty-sounding, terrifying, downright evil tracks that have a lot of drive and keep you glued to the speakers. His latest solo release, Tzina’s House on Kafta, is a good example of just that, and so is his work with Sawf, which the duo release under Vofa (be sure to check out their killer PI05 EP, which came out just a month ago). ANFS is clearly a perfectionist and this approach has let him give the world some sick stuff"],
         "youtube": ""
     },
     {
@@ -322,7 +322,7 @@
         "id": "user_25",
         "type": "djset",
         "name": "Konops",
-        "soundcloud": "",
+        "soundcloud": "https://soundcloud.com/konops",
         "mixcloud": "https://www.mixcloud.com/konops",
         "facebook": "https://el-gr.facebook.com/thekonops",
         "photo": "konops.jpg",
@@ -443,7 +443,7 @@
         "id": "user_35",
         "type": "djset",
         "name": "Ntavisia",
-        "soundcloud": "",
+        "soundcloud": "https://soundcloud.com/techno_tzou",
         "mixcloud": "https://www.mixcloud.com/teknotzou",
         "facebook": "",
         "photo": "ntavisia.png",
