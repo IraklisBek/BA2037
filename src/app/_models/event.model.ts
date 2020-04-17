@@ -10,4 +10,5 @@ export class EventModel{
     photos_folder: string
     artists: Array<ArtistModel>
     date: string
+    mixcloud_all: Array<string>
 }

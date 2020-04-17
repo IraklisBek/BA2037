@@ -13,45 +13,47 @@
   <div class="col-md-4 col-sm-4 col-12 text-center">
     <img src="../../../assets/Images/Artists/{{artist.photo}}" class="artist-img">
     <div *ngIf="artist.soundcloud; let soundcloud" class="row" style="margin-top:10px;">
-      <div class="col-md-2 col-sm-12 col-12 my-auto">
+      <div class="col-md-2 col-sm-2 col-2 my-auto">
         <img src="../../../assets/Images/soundcloud2.png" style="width:30px; margin-left:15px;">
       </div>
-      <div  class="col-md-10 col-sm-12 col-12 my-auto">
-        <div (click)="goToLink(soundcloud)" class="links">{{soundcloud}}</div>
+      <div  class="col-md-10 col-sm-10 col-10 my-auto">
+        <div (click)="goToLink(soundcloud)" class="links" style="text-align: left !important;">{{soundcloud}}</div>
       </div>
 
     </div>
     <div *ngIf="artist.mixcloud; let mixcloud" class="row" style="margin-top:10px;">
-      <div class="col-md-2 col-sm-12 col-12 my-auto">
+      <div class="col-md-2 col-sm-2 col-2 my-auto">
         <img src="../../../assets/Images/mixcloud.png" style="width:30px; margin-left:15px;">
       </div>
-      <div class="links col-md-10 col-sm-12 col-12 my-auto"
-        (click)="goToLink(mixcloud)">
+      <div class="links col-md-10 col-sm-10 col-10 my-auto"
+        (click)="goToLink(mixcloud)" style="text-align: left !important;">
         {{mixcloud}}</div>
     </div>
     <div *ngIf="artist.youtube; let youtube" class="row" style="margin-top:10px;">
-      <div class="col-md-2 col-sm-12 col-12 my-auto">
+      <div class="col-md-2 col-sm-2 col-2 my-auto">
         <img src="../../../assets/Images/youtube.png" style="width:30px; margin-left:15px;">
       </div>
-      <div class="links col-md-10 col-sm-12 col-12 my-auto"
-        (click)="goToLink(youtube)">
+      <div class="links col-md-10 col-sm-10 col-10 my-auto"
+        (click)="goToLink(youtube)" style="text-align: left !important;">
         {{youtube}}</div>
     </div>
     <div *ngIf="artist.facebook; let facebook" class="row" style="margin-top:10px;">
-      <div class="col-md-2 col-sm-12 col-12 my-auto">
+      <div class="col-md-2 col-sm-2 col-2 my-auto">
         <img src="../../../assets/Images/facebook.png" style="width:30px; margin-left:15px;">
       </div>
-      <div  class="col-md-10 col-sm-12 col-12 my-auto">
-        <div *ngIf="artist.id=='user_14'" (click)="goToLink(facebook[0])" class="links">{{facebook[0]}}</div>
-        <div *ngIf="artist.id=='user_14'" (click)="goToLink(facebook[1])" class="links">{{facebook[1]}}</div>
-        <div *ngIf="artist.id!='user_14'" (click)="goToLink(facebook)" class="links">{{facebook}}</div>
+      <div  class="col-md-10 col-sm-10 col-10 my-auto">
+        <div *ngIf="artist.id=='user_14'" (click)="goToLink(facebook[0])" class="links" style="text-align: left !important;">{{facebook[0]}}</div>
+        <div *ngIf="artist.id=='user_14'" (click)="goToLink(facebook[1])" class="links" style="text-align: left !important;">{{facebook[1]}}</div>
+        <div *ngIf="artist.id!='user_14'" (click)="goToLink(facebook)" class="links" style="text-align: left !important;">{{facebook}}</div>
       </div>
       <div *ngIf="isMobile" class="seperator dashed-line"></div>
     </div>
 
 
   </div>
+
   <div class="col-8 col-sm-8 col-12 mobile-center" style="color:var(--my-grey)">
+    <div *ngIf="isMobile" class="seperator dashed-line"></div>
     <div *ngFor="let line of artist.description">
       <div class="my-text-justify">{{line}}</div>
       <div class="seperator dashed-line"></div>

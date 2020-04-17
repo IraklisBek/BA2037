@@ -3,198 +3,440 @@
         "id": "event_1",
         "type": "sunday",
         "name": "Experimental Sundays Vol. 1 at Stoa60",
-        "artists": ["Silence Of The Goat", "MX", "Melmaid", "Ouroboros / Dj Office", "Waiting Room", "Ntavisia", "Konops"],
+        "artists": [
+            "Silence Of The Goat",
+            "MX",
+            "Melmaid",
+            "Ouroboros / Dj Office",
+            "Waiting Room",
+            "Ntavisia",
+            "Konops"
+        ],
         "mixcloud": "https://www.mixcloud.com/BA2037/playlists/experimental-sundays-vol-1",
         "photos_folder": "esv1",
-        "description": ["Experimental Sundays!", "Μουσικές πειραματικές συναντήσεις Κυριακή απόγευμα στην αγαπημένη μας υπόγα..."],
+        "description": [
+            "Experimental Sundays!",
+            "Μουσικές πειραματικές συναντήσεις Κυριακή απόγευμα στην αγαπημένη μας υπόγα..."
+        ],
         "poster": "1.jpg",
-        "date": "2.12.2018"
+        "date": "2.12.2018",
+        "mixcloud_all": [
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2Fkonops%2Fkonops-idmdnb-dj-set-stoa60-experimental-sundays%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2Fzer0shoot%2Fwaiting-room-set-experimental-sundays-at-stoa_60%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2Fteknotzou%2Fexperimental-sunday-set%2F"
+        ]
     },
     {
         "id": "event_2",
         "type": "party",
         "name": "Party at University of Crete",
-        "artists": ["Waiting Room", "Konops", "Regular Expression", "Sirap", "Complex Resistance", "Ntavisia", "Ouroboros / Dj Office", "Melmaid"],
+        "artists": [
+            "Waiting Room",
+            "Konops",
+            "Regular Expression",
+            "Sirap",
+            "Complex Resistance",
+            "Ntavisia",
+            "Ouroboros / Dj Office",
+            "Melmaid"
+        ],
         "mixcloud": "https://www.mixcloud.com/BA2037/playlists/experimental-sundays-vol-2/",
         "photos_folder": "",
-        "description": ["Αποχαιρετούμε το 2018 με ένα δυνατό ηλεκτρονικό πάρτυ στο φοιτητικό κέντρο του πανεπιστημίου Κρήτης με την υποστήριξη του Ρα.Στα.Παν.Κ. 96,7 και σε συνεργασία με τον αυτοδιαχειριζόμενο συναυλιακό χώρο  Στοά60. Είναι μόλις η δεύτερη εκδήλωση τoυ νεοσύστατου εγχειρήματος ΒΑ 2Ο37,(που ονομάστηκε έτσι ως φόρος τιμής στον αξέχαστο Νίκο Νικολαΐδη) μετά το παρθενικό event  με τα πειραματικά live acts & τα dj set ως experimental s(ο)unday που φιλοξενήθηκε στη Στοά60 στις αρχές του Δεκέμβρη."],
+        "description": [
+            "Αποχαιρετούμε το 2018 με ένα δυνατό ηλεκτρονικό πάρτυ στο φοιτητικό κέντρο του πανεπιστημίου Κρήτης με την υποστήριξη του Ρα.Στα.Παν.Κ. 96,7 και σε συνεργασία με τον αυτοδιαχειριζόμενο συναυλιακό χώρο  Στοά60. Είναι μόλις η δεύτερη εκδήλωση τoυ νεοσύστατου εγχειρήματος ΒΑ 2Ο37,(που ονομάστηκε έτσι ως φόρος τιμής στον αξέχαστο Νίκο Νικολαΐδη) μετά το παρθενικό event  με τα πειραματικά live acts & τα dj set ως experimental s(ο)unday που φιλοξενήθηκε στη Στοά60 στις αρχές του Δεκέμβρη."
+        ],
         "poster": "2.jpg",
-        "date": "21.12.2018"
+        "date": "21.12.2018",
+        "mixcloud_all": [
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fcomplex-resistance-aka-impedance-dj-set-for-ba2037-21122018%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fsirap-dj-set-for-ba2037-21122018%2F"
+        ]
     },
     {
         "id": "event_3",
         "type": "sunday",
         "name": "Experimental Sundays Vol. 2 at Stoa60",
-        "artists": ["Deep In Mind", "Konops", "Regular Expression", "Sirap"],
+        "artists": [
+            "Deep In Mind",
+            "Konops",
+            "Regular Expression",
+            "Sirap"
+        ],
         "mixcloud": "",
         "photos_folder": "",
-        "description": ["Η ΒΑ 2037 σας καλοσωρίζει στις..", "Experimental S(ο)undays!", "-μουσικές πειραματικές συναντήσεις Κυριακή απόγευμα στην αγαπημένη μας υπόγα-."],
+        "description": [
+            "Η ΒΑ 2037 σας καλοσωρίζει στις..",
+            "Experimental S(ο)undays!",
+            "-μουσικές πειραματικές συναντήσεις Κυριακή απόγευμα στην αγαπημένη μας υπόγα-."
+        ],
         "poster": "3.jpg",
-        "date": "13.01.2019"
+        "date": "13.01.2019",
+        "mixcloud_all": [
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fsirap-dj-set-experimental-sundays%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fthermot-aka-regex-aka-sound-0-dj-set-experimental-sundays-stoa-60%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fcomplex-resistance-aka-impedance-dj-set-experimental-sundays-stoa-60%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fkonops-dj-set-experimental-sundays-stoa-60%2F"
+        ]
     },
     {
         "id": "event_4",
         "type": "sunday",
         "name": "Experimental Sundays Vol. 3 at Stoa60",
-        "artists": ["Screaming Skull Junkies", "Unified Method", "Substance D", "Waiting Room", "Melmaid"],
+        "artists": [
+            "Screaming Skull Junkies",
+            "Unified Method",
+            "Substance D",
+            "Waiting Room",
+            "Melmaid"
+        ],
         "mixcloud": "https://www.mixcloud.com/BA2037/playlists/experimental-sundays-vol-3",
         "photos_folder": "",
-        "description": ["Η ΒΑ 2037 με χαρά παρουσιάζει το 3ο Experimental S(ο)unday!", "Αυτήν την Κυριακή θα έχουμε μαζί μας τους Deleveled από τα Χανιά, που θα παρουσιάσουν το σχήμα Screaming Skull Junkies που συνδυάζει DJ set με live τσέλο και electronics, καθώς και 2 ώρες dj sets με τους Unified Method και Substance D", "Εδώ μπορείτε να ακούσετε κάποια από τα set τους:", "https://www.mixcloud.com/deleveled_movement/", "Μαζί τους θα είναι και οι Platon + VRV για ένα special V(isual)J set!", "Το άνοιγμα του event θα γίνει από τις καταπληκτικές  Waiting Room και Melpo Molko ", "Στο event αυτό, είπαμε να προσπαθήσουμε όσο γίνεται να περάσουμε στον κόσμο (αλλά και σε εμάς) την πολιτική του ", "**No Smoking**. ", "Ας προσπαθήσουμε να σεβαστούμε αυτούς που δεν καπνίζουν αλλά και εμάς τους ίδιους για μια πιο καθαρή ατμόσφαιρα στην αγαπημένη μας υπόγα.", "Τα λέμε την Κυριακή!"],
+        "description": [
+            "Η ΒΑ 2037 με χαρά παρουσιάζει το 3ο Experimental S(ο)unday!",
+            "Αυτήν την Κυριακή θα έχουμε μαζί μας τους Deleveled από τα Χανιά, που θα παρουσιάσουν το σχήμα Screaming Skull Junkies που συνδυάζει DJ set με live τσέλο και electronics, καθώς και 2 ώρες dj sets με τους Unified Method και Substance D",
+            "Εδώ μπορείτε να ακούσετε κάποια από τα set τους:",
+            "https://www.mixcloud.com/deleveled_movement/",
+            "Μαζί τους θα είναι και οι Platon + VRV για ένα special V(isual)J set!",
+            "Το άνοιγμα του event θα γίνει από τις καταπληκτικές  Waiting Room και Melpo Molko ",
+            "Στο event αυτό, είπαμε να προσπαθήσουμε όσο γίνεται να περάσουμε στον κόσμο (αλλά και σε εμάς) την πολιτική του ",
+            "**No Smoking**. ",
+            "Ας προσπαθήσουμε να σεβαστούμε αυτούς που δεν καπνίζουν αλλά και εμάς τους ίδιους για μια πιο καθαρή ατμόσφαιρα στην αγαπημένη μας υπόγα.",
+            "Τα λέμε την Κυριακή!"
+        ],
         "poster": "4.jpg",
-        "date": "10.02.2019"
+        "date": "10.02.2019",
+        "mixcloud_all": [
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2Fdeleveled_movement%2Fscreaming-skull-junkies-_experimental-sundays-vol3-stoa60-1022019%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fdj-set-melmaid-experimental-sunday-vol-3%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fdj-set-waiting-room_experimental-sunday-vol3%2F"
+        ]
     },
     {
         "id": "event_5",
         "type": "sunday",
         "name": "Experimental Sundays Vol. 4 at Stoa60",
-        "artists": ["ANFS", "Impedance", "Regular Expression", "Konops", "Ouroboros / Dj Office"],
+        "artists": [
+            "ANFS",
+            "Impedance",
+            "Regular Expression",
+            "Konops",
+            "Ouroboros / Dj Office"
+        ],
         "mixcloud": "https://www.mixcloud.com/BA2037/playlists/experimental-sundays-vol-4",
         "photos_folder": "",
-        "description": ["Κυριακάτικη απογευματινή τελετή στη Στοά 60!", "Δε χρειάζεται να πούμε και πολλά... ANFS live, Impedance live at Experimental Sundays Vol.4! at Stoa60"],
+        "description": [
+            "Κυριακάτικη απογευματινή τελετή στη Στοά 60!",
+            "Δε χρειάζεται να πούμε και πολλά... ANFS live, Impedance live at Experimental Sundays Vol.4! at Stoa60"
+        ],
         "poster": "5.jpg",
-        "date": "24.02.2019"
+        "date": "24.02.2019",
+        "mixcloud_all": [
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fregular-expression-dj-set-experimental-sundays-vol4-with-anfs-and-impedance%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fkonops-dj-set-experimental-sundays-vol4-with-anfs-and-impedance%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fouroboros-vinyl-set-experimental-sundays-vol4-with-anfs-and-impedance%2F"
+        ]
     },
     {
         "id": "event_6",
         "type": "sunday",
         "name": "Experimental Sundays Vol. 5 at Stoa60",
-        "artists": ["Last Days Of S.E.X.", "Solar Anus", "krats", "Melmaid", "Ouroboros / Dj Office", "Ntavisia", "Sirap"],
+        "artists": [
+            "Last Days Of S.E.X.",
+            "Solar Anus",
+            "krats",
+            "Melmaid",
+            "Ouroboros / Dj Office",
+            "Ntavisia",
+            "Sirap"
+        ],
         "mixcloud": "https://www.mixcloud.com/BA2037/playlists/experimental-sundays-vol5",
         "photos_folder": "",
-        "description": ["Experimental Sundays are back with 3 Powerful Live Electronics Acts and 4 Dj Sets"],
+        "description": [
+            "Experimental Sundays are back with 3 Powerful Live Electronics Acts and 4 Dj Sets"
+        ],
         "poster": "6.jpg",
-        "date": "31.03.2019"
+        "date": "31.03.2019",
+        "mixcloud_all": [
+
+        ]
     },
     {
         "id": "event_7",
         "type": "sunday",
         "name": "Experimental Sundays Vol. 6 at Stoa60",
-        "artists": ["KOSTADIS", "Turbo Teeth", "Regular Expression", "Waiting Room", "Complex Resistance", "Konops"],
+        "artists": [
+            "KOSTADIS",
+            "Turbo Teeth",
+            "Regular Expression",
+            "Waiting Room",
+            "Complex Resistance",
+            "Konops"
+        ],
         "mixcloud": "https://www.mixcloud.com/BA2037/playlists/experimental-sundays-vol6",
         "photos_folder": "",
-        "description": ["Experimental Sundays Vol. 6 at Stoa60"],
+        "description": [
+            "Experimental Sundays Vol. 6 at Stoa60"
+        ],
         "poster": "7.jpg",
-        "date": "14.04.2019"
+        "date": "14.04.2019",
+        "mixcloud_all": [
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fkrats-live-experimental-sundays-vol5-with-solar-anus-last-days-of-sex-krats%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fouroboros-dj-set-experimental-sundays-vol5-with-solar-anus-last-days-of-sex-krats%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fntavisia-brave-dj-set-experimental-sundays-vol5-with-solar-anus-last-days-of-sex-krats%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fsirap-dj-set-experimental-sundays-vol5-with-solar-anus-last-days-of-sex-krats%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fdj-set-melmaid_experimental-sunday-vol-5%2F"
+        ]
     },
     {
         "id": "event_8",
         "type": "party",
         "name": "Makrovoutes Closing Party at University of Crete",
-        "artists": ["V.V.I.A. (Venus Volcanism + In Atlas)", "krats", "Screw Operation", "Ouroboros / Dj Office", "Complex Resistance", "Konops", "Physiq"],
+        "artists": [
+            "V.V.I.A. (Venus Volcanism + In Atlas)",
+            "krats",
+            "Screw Operation",
+            "Ouroboros / Dj Office",
+            "Complex Resistance",
+            "Konops",
+            "Physiq"
+        ],
         "mixcloud": "https://www.mixcloud.com/BA2037/playlists/makrovoutes-closing-party",
         "photos_folder": "",
-        "description": ["Χτίζοντας πάνω σ’ αυτό που αποκαλούμε “Μακροβούτες”, φέτος θέλουμε να διευρύνουμε την διοργάνωση που άλλοτε περιοριζόταν σε ένα live, δημιουργώντας μία διέξοδο μέσα στο αποστειρωμένο Πανεπιστήμιο.Να φτιάξουμε ένα χώρο προβληματισμού, ένα χώρο κοινωνικής αλληλεπίδρασης, ένα χώρο που να γουστάρεις να κάτσεις μετά το μάθημα. Ένα δημόσιο χώρο που μπορούμε να τον οικειοποιούμαστε, μιας και δεν έχουν μείνει και πολλοί τέτοιοι στη πόλη μας.", "Την υπέρβαση της πραγματικότητας μας τη ζούμε κάθε φορά που κάποιος μοιράζεται κάτι χωρίς να του βάζει μια τιμή επάνω. Όσο περισσότερο αλληλεπιδρούμε με αυτόν τον τρόπο, τόσο περισσότερο αλλάζουμε και τον κόσμο γύρω μας. Αυτή τη λογική προσπαθούμε να περάσουμε και στο φεστιβάλ. Να φτιάξουμε κάτι με ό,τι έχουμε, με τις γνώσεις μας, την ενέργεια μας, το χρόνο μας και να το μοιραστούμε με όποιον άλλο αισθάνεται το ίδιο. Να προσπαθήσουμε να απο-εμπορευματοποιήσουμε το τρόπο με τον οποίο παράγουμε και καταναλώνουμε. Να μάθουμε ο ένας από τον άλλον, να ακούσουμε τί έχουν να πουν οι γύρω μας, να αναθεωρήσουμε το πώς υπάρχουμε.", "Ευελπιστούμε ότι δεν είμαστε τα μόνα άτομα που μοιραζόμαστε αυτές τις αντιλήψεις και για αυτό το λόγο θα θέλαμε να βρούμε όλους τους ανθρώπους και τις ομάδες που θα ήθελαν να συμμετέχουν σε μια τέτοια προσπάθεια. Καλούμε όποια ομάδα, συλλογικότητα, άτομο θέλει να έρθει να συνδιαμορφώσουμε τις δραστηριότητες του φεστιβάλ.", "Για να γίνουν όλα αυτά πράξη, συναντιόμαστε τακτικά το διάστημα μέχρι και την τελευταία εβδομάδα των μαθημάτων που θα παρουσιάσουμε ό,τι έχουμε ετοιμάσει αυτούς τους δύο μήνες στο Φοιτητικό Κέντρο.", "Πρωτοβουλία ανθρώπων που (θέλουν να) βουτάνε μακριά."],
+        "description": [
+            "Χτίζοντας πάνω σ’ αυτό που αποκαλούμε “Μακροβούτες”, φέτος θέλουμε να διευρύνουμε την διοργάνωση που άλλοτε περιοριζόταν σε ένα live, δημιουργώντας μία διέξοδο μέσα στο αποστειρωμένο Πανεπιστήμιο.Να φτιάξουμε ένα χώρο προβληματισμού, ένα χώρο κοινωνικής αλληλεπίδρασης, ένα χώρο που να γουστάρεις να κάτσεις μετά το μάθημα. Ένα δημόσιο χώρο που μπορούμε να τον οικειοποιούμαστε, μιας και δεν έχουν μείνει και πολλοί τέτοιοι στη πόλη μας.",
+            "Την υπέρβαση της πραγματικότητας μας τη ζούμε κάθε φορά που κάποιος μοιράζεται κάτι χωρίς να του βάζει μια τιμή επάνω. Όσο περισσότερο αλληλεπιδρούμε με αυτόν τον τρόπο, τόσο περισσότερο αλλάζουμε και τον κόσμο γύρω μας. Αυτή τη λογική προσπαθούμε να περάσουμε και στο φεστιβάλ. Να φτιάξουμε κάτι με ό,τι έχουμε, με τις γνώσεις μας, την ενέργεια μας, το χρόνο μας και να το μοιραστούμε με όποιον άλλο αισθάνεται το ίδιο. Να προσπαθήσουμε να απο-εμπορευματοποιήσουμε το τρόπο με τον οποίο παράγουμε και καταναλώνουμε. Να μάθουμε ο ένας από τον άλλον, να ακούσουμε τί έχουν να πουν οι γύρω μας, να αναθεωρήσουμε το πώς υπάρχουμε.",
+            "Ευελπιστούμε ότι δεν είμαστε τα μόνα άτομα που μοιραζόμαστε αυτές τις αντιλήψεις και για αυτό το λόγο θα θέλαμε να βρούμε όλους τους ανθρώπους και τις ομάδες που θα ήθελαν να συμμετέχουν σε μια τέτοια προσπάθεια. Καλούμε όποια ομάδα, συλλογικότητα, άτομο θέλει να έρθει να συνδιαμορφώσουμε τις δραστηριότητες του φεστιβάλ.",
+            "Για να γίνουν όλα αυτά πράξη, συναντιόμαστε τακτικά το διάστημα μέχρι και την τελευταία εβδομάδα των μαθημάτων που θα παρουσιάσουμε ό,τι έχουμε ετοιμάσει αυτούς τους δύο μήνες στο Φοιτητικό Κέντρο.",
+            "Πρωτοβουλία ανθρώπων που (θέλουν να) βουτάνε μακριά."
+        ],
         "poster": "8.jpg",
-        "date": "18.05.2019"
+        "date": "18.05.2019",
+        "mixcloud_all": [
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fregular-expression-dj-set-experimental-sundays-vol6-with-kostadis-turboteeth%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fcomplex-resistance-dj-set-experimental-sundays-vol6-with-kostadis-turboteeth%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fwaiting-room-dj-set-experimental-sundays-vol6-with-kostadis-turboteeth%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fkonops-dj-set-experimental-sundays-vol6-with-kostadis-turboteeth%2F"
+        ]
     },
     {
         "id": "event_9",
         "type": "screaning",
         "name": "Screaning Sunday at Stoa60",
-        "artists": ["BA 2037 Aesthetics"],
+        "artists": [
+            "BA 2037 Aesthetics"
+        ],
         "mixcloud": "https://www.mixcloud.com/BA2037/sreening-sunday-regular-expression-closing-dj-set-after-projection-of-movie-eyridiki-ba-2o37",
         "photos_folder": "",
-        "description": ["Προβολή της ταινίας 'Ευριδίκη BA 2037' του Νίκου Νικολαΐδη", "Ως τελευταία δραστηριότητα μας για αυτή τη σεζόν στην αγαπημένη μας Στοά 60, αποφασίσαμε να προβάλουμε την ταινία από την οποία εμπνευστήκαμε το όνομα της ομάδας. ", "Πριν και μετά την προβολή θα ακουστούν dj sets από μέλη της ομάδας."],
+        "description": [
+            "Προβολή της ταινίας 'Ευριδίκη BA 2037' του Νίκου Νικολαΐδη",
+            "Ως τελευταία δραστηριότητα μας για αυτή τη σεζόν στην αγαπημένη μας Στοά 60, αποφασίσαμε να προβάλουμε την ταινία από την οποία εμπνευστήκαμε το όνομα της ομάδας. ",
+            "Πριν και μετά την προβολή θα ακουστούν dj sets από μέλη της ομάδας."
+        ],
         "poster": "9.jpg",
-        "date": "26.05.2019"
+        "date": "26.05.2019",
+        "mixcloud_all": []
     },
     {
         "id": "event_10",
         "type": "party",
         "name": "BA 2037 in Nature",
-        "artists": ["unknown"],
+        "artists": [
+            "unknown"
+        ],
         "mixcloud": "https://www.mixcloud.com/BA2037/ba-2037-in-nature-sirap-b2b-ourobos",
         "photos_folder": "",
-        "description": ["Η BA 2037 πάει στην μητέρα φύση για ένα κλειστό πάρτυ μεταξύ φίλων και καλών γνωστών <3", "See you at the Secret Nature"],
+        "description": [
+            "Η BA 2037 πάει στην μητέρα φύση για ένα κλειστό πάρτυ μεταξύ φίλων και καλών γνωστών <3",
+            "See you at the Secret Nature"
+        ],
         "poster": "10.jpg",
-        "date": "unknown"
+        "date": "unknown",
+        "mixcloud_all": [
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fmakrovoutes-closing-party-konops-x-waiting-room%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fmakrovoutes-closing-party-ro1-aka-sirap-b2b-regular-expression%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fmakrovoutes-closing-party-ntavisia-brave-b2b-melmaid%2F"
+        ]
+
     },
     {
         "id": "event_11",
         "type": "party",
         "name": "Karabolas Park",
-        "artists": ["Opiod Slot Machine", "Service Cost", "Reaktiv.", "Regular Expression", "Konops", "Ouroboros / Dj Office"],
+        "artists": [
+            "Opiod Slot Machine",
+            "Service Cost",
+            "Reaktiv.",
+            "Regular Expression",
+            "Konops",
+            "Ouroboros / Dj Office"
+        ],
         "mixcloud": "https://www.mixcloud.com/BA2037/playlists/karavolas-park-sep-2019",
         "photos_folder": "",
-        "description": ["Η ΒΑ 2037 παρουσιάζει το πρώτο πάρτυ της καινούργιας μας χρονιάς στον Καράβολα. Η νύχτα θα είναι γεμάτη με Ηλεκτρονική Μουσική, από την αρχή μέχρι το τέλος της. ", "Μαζί μας θα είναι οι Opioid Slot Machine, Service Cost και Reaktiv.. Μέλη της ΒΑ θα ανοίξουν και θα κλείσουν την βραδιά."],
+        "description": [
+            "Η ΒΑ 2037 παρουσιάζει το πρώτο πάρτυ της καινούργιας μας χρονιάς στον Καράβολα. Η νύχτα θα είναι γεμάτη με Ηλεκτρονική Μουσική, από την αρχή μέχρι το τέλος της. ",
+            "Μαζί μας θα είναι οι Opioid Slot Machine, Service Cost και Reaktiv.. Μέλη της ΒΑ θα ανοίξουν και θα κλείσουν την βραδιά."
+        ],
         "poster": "11.jpg",
-        "date": "Last Day Of Summer"
+        "date": "Last Day Of Summer",
+        "mixcloud_all": [
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fregular-expression-opening-set-karavolas-park%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fkonops-opening-set-karavolas-park-w-osm-service-cost-reaktiv%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fouroboros-closing-set-karavolas-park-w-osm-service-cost-reaktiv%2F"
+        ]
     },
     {
         "id": "event_12",
         "type": "saturday",
         "name": "Saturday Takeover Pt. 1 at Stoa60",
-        "artists": ["Impedance", "Anton Beatbox", "Ouroboros / Dj Office", "Regular Expression"],
+        "artists": [
+            "Impedance",
+            "Anton Beatbox",
+            "Ouroboros / Dj Office",
+            "Regular Expression"
+        ],
         "mixcloud": "https://www.mixcloud.com/BA2037/playlists/saturday-takeover-pt1",
         "photos_folder": "",
-        "description": ["Το πρώτο μας event για φέτος έρχεται στις 2 Νοεμβρίου στην πολυαγαπημένη Στοά60. "],
+        "description": [
+            "Το πρώτο μας event για φέτος έρχεται στις 2 Νοεμβρίου στην πολυαγαπημένη Στοά60. "
+        ],
         "poster": "12.jpg",
-        "date": "02.11.2019"
+        "date": "02.11.2019",
+        "mixcloud_all": [
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fsaturday-takeover-pt1-with-impedance-anton-beatbox%2F" 
+        ]
     },
     {
         "id": "event_13",
         "type": "sunday",
         "name": "Experimental Sundays Vol. 7 at Stoa60",
-        "artists": ["Ξέφρενο Αερόστατο", "F:ousies", "Melmaid", "Waiting Room"],
+        "artists": [
+            "Ξέφρενο Αερόστατο",
+            "F:ousies",
+            "Melmaid",
+            "Waiting Room"
+        ],
         "mixcloud": "https://www.mixcloud.com/zer0shoot/waiting-room-experimental-sunday-vol-7",
         "photos_folder": "",
-        "description": ["-"],
+        "description": [
+            "-"
+        ],
         "poster": "13.jpg",
-        "date": "24.11.2019"
+        "date": "24.11.2019",
+        "mixcloud_all": [
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2Fzer0shoot%2Fwaiting-room-experimental-sunday-vol-7%2F"
+        ]
     },
     {
         "id": "event_14",
         "type": "sunday",
         "name": "Experimental Sundays Vol. 8 at Euaggelismos Squat",
-        "artists": ["TONTO", "Tacet Tacet Tacet", "krats", "Regular Expression", "Ouroboros / Dj Office"],
+        "artists": [
+            "TONTO",
+            "Tacet Tacet Tacet",
+            "krats",
+            "Regular Expression",
+            "Ouroboros / Dj Office"
+        ],
         "mixcloud": "-",
         "photos_folder": "",
-        "description": ["Εκδήλωση στην Κατάληψη Ευαγγελισμού.", " Αλληλεγγυη σε Κατειλημμένους και Αυτοδιαχειριζόμενους Χώρους"],
+        "description": [
+            "Εκδήλωση στην Κατάληψη Ευαγγελισμού.",
+            " Αλληλεγγυη σε Κατειλημμένους και Αυτοδιαχειριζόμενους Χώρους"
+        ],
         "poster": "14.jpg",
-        "date": "01.12.2019"
+        "date": "01.12.2019",
+        "mixcloud_all": [
+
+        ]
     },
     {
         "id": "event_15",
         "type": "saturday",
         "name": "Saturday Takeover Pt. 2 at Stoa60",
-        "artists": ["P.S. Stamps Back", "Molfetus", "Ouroboros / Dj Office", "Regular Expression"],
+        "artists": [
+            "P.S. Stamps Back",
+            "Molfetus",
+            "Ouroboros / Dj Office",
+            "Regular Expression"
+        ],
         "mixcloud": "https://www.mixcloud.com/BA2037/regular-expression-opening-set-saturday-takeover-pt2-with-ps-stamps-back-molfetus",
         "photos_folder": "",
-        "description": ["-"],
+        "description": [
+            "-"
+        ],
         "poster": "15.jpg",
-        "date": "14.12.2019"
+        "date": "14.12.2019",
+        "mixcloud_all": [
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fregular-expression-opening-set-saturday-takeover-pt2-with-ps-stamps-back-molfetus%2F"
+        ]
     },
     {
         "id": "event_16",
         "type": "sunday",
         "name": "Experimental Sundays Vol. 9 at Stoa60",
-        "artists": ["EAZY", "RND Access", "MX", "Waiting Room", "d0110rεs"],
+        "artists": [
+            "EAZY",
+            "RND Access",
+            "MX",
+            "Waiting Room",
+            "d0110rεs"
+        ],
         "mixcloud": "-",
         "photos_folder": "",
-        "description": ["Το πρώτο event της χρονιάς έρχεται στην αγαπημένη μας υπόγα με καλεσμένες τις EAZY από Γερμανία, τους RND Access (ambient, funk) από Ηράκλειο και τον Μάριο μας (aka MX) (experimental, noize) με ένα live jam παρέα με τα synthesizers του στην αρχή της βραδιάς.", "Καλεσμένος μας για dj set o Mike Tzav (d0110Rεs) για το κλείσμο της βραδιάς και κάπου ενδιάμεσα στα live θα συμπληρώσει η Waiting Room"],
+        "description": [
+            "Το πρώτο event της χρονιάς έρχεται στην αγαπημένη μας υπόγα με καλεσμένες τις EAZY από Γερμανία, τους RND Access (ambient, funk) από Ηράκλειο και τον Μάριο μας (aka MX) (experimental, noize) με ένα live jam παρέα με τα synthesizers του στην αρχή της βραδιάς.",
+            "Καλεσμένος μας για dj set o Mike Tzav (d0110Rεs) για το κλείσμο της βραδιάς και κάπου ενδιάμεσα στα live θα συμπληρώσει η Waiting Room"
+        ],
         "poster": "16.jpg",
-        "date": "19.01.2020"
+        "date": "19.01.2020",
+        "mixcloud_all": []
     },
     {
         "id": "event_17",
         "type": "saturday",
         "name": "Saturday Takeover Pt. 3 at Stoa60",
-        "artists": ["Lycurgus", "Impedance", "Regular Expression", "Konops"],
+        "artists": [
+            "Lycurgus",
+            "Impedance",
+            "Regular Expression",
+            "Konops"
+        ],
         "mixcloud": "https://www.mixcloud.com/BA2037/regular-expression-opening-set-saturday-takeover-pt3-with-lycurgus-impedance",
         "photos_folder": "",
-        "description": ["-"],
+        "description": [
+            "-"
+        ],
         "poster": "17.jpg",
-        "date": "25.01.2020"
+        "date": "25.01.2020",
+        "mixcloud_all": [
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fregular-expression-opening-set-saturday-takeover-pt3-with-lycurgus-impedance%2F"
+        ]
     },
     {
         "id": "event_18",
         "type": "party",
         "name": "Post Valentine Party at University of Crete",
-        "artists": ["Reaktiv.", "Koketa MC", "Sirap", "Ntavisia", "Konops", "Cliqa", "Melmaid"],
+        "artists": [
+            "Reaktiv.",
+            "Koketa MC",
+            "Sirap",
+            "Ntavisia",
+            "Konops",
+            "Cliqa",
+            "Melmaid"
+        ],
         "mixcloud": "https://www.mixcloud.com/BA2037/playlists/post-valentine-at-uoc",
         "photos_folder": "",
-        "description": ["Μεταερωτικό Πάρτυ Της ΒΑ2037 Με Την Υποστήριξη Του ΡΑ.ΣΤΑ.ΠΑΝ.Κ. Για Να Μπεί Καλά Η Χρονιά"],
+        "description": [
+            "Μεταερωτικό Πάρτυ Της ΒΑ2037 Με Την Υποστήριξη Του ΡΑ.ΣΤΑ.ΠΑΝ.Κ. Για Να Μπεί Καλά Η Χρονιά"
+        ],
         "poster": "18.jpg",
-        "date": "15.02.2020"
+        "date": "15.02.2020",
+        "mixcloud_all": [
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fpost-valentines-party-reaktiv%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fpost-valentines-party-sirap%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fpost-valentines-party-konops%2F",
+            "https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FBA2037%2Fpost-valentines-ntavisia%2F"
+        ]
     }
 ]

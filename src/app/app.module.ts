@@ -23,6 +23,7 @@ import { AngularFireModule } from "@angular/fire";
 import { AngularFirestoreModule } from "@angular/fire/firestore";
 import { environment } from 'src/environments/environment';
 import { FormsModule } from '@angular/forms'
+import { MainPipe } from './_pipes/pipe.module';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { FormsModule } from '@angular/forms'
     ToastrModule.forRoot(), // ToastrModule added
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
-    FormsModule
+    FormsModule,
+    MainPipe
   ],
   providers: [GetDataService, SEOService],
   bootstrap: [AppComponent]

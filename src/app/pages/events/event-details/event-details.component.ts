@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GetDataService } from 'src/app/_services/get-data.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { fadeInOnEnterAnimation } from 'angular-animations';
@@ -32,7 +32,7 @@ export class EventDetailsComponent implements OnInit {
     private location: Location,
     private router: Router,
     private title: Title,
-    private _seoService: SEOService
+    private _seoService: SEOService,
   ) {
    }
 
