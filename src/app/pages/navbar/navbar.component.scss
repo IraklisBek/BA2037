@@ -60,7 +60,7 @@ a:visited {
 @media (min-width: 320px) and (max-width: 480px) {
   #my-menu-mobile {
     background-color: var(--my-grey);
-    background-color: var(--my-black);
+    background-color: black;
     position: fixed;
     bottom: 0;
     left: 15px;
