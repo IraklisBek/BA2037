@@ -1,4 +1,4 @@
-# Ba2037 Website
+# BA 2037 Website
 
 The project consists of people that are interested in music, musicians and Djs with common desire to find space and time in order to listen/play/dance/(re) produce the music that we enjoy. We find ourselves somewhere in the ocean of electronic and experimental music and we would like to access the very depths of it.
 
