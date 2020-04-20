@@ -25,7 +25,7 @@
 .menu-item-home,
 a,
 a:visited {
-  color: white;
+  color: var(--my-black);
   padding-top: 2%;
   padding-bottom: 2%;
 }
@@ -54,6 +54,7 @@ a:visited {
   a,
   a:visited {
     font-weight: bold;
+    color: var(--my-black);
   }
 }
 
@@ -72,5 +73,11 @@ a:visited {
   }
   #menu-mobile-items {
     display: none;
+  }
+  .menu-item-home,
+  a,
+  a:visited {
+    font-weight: bold;
+    color: white;
   }
 }
