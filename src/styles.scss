@@ -108,8 +108,11 @@ body {
   text-align: center;
 }
 
-.dashed-line{
-  opacity:0.3;   border-bottom: 1px dashed rgb(122, 122, 122); padding-top:15px; margin-bottom:15px;
+.dashed-line {
+  opacity: 0.3;
+  border-bottom: 1px dashed rgb(122, 122, 122);
+  padding-top: 15px;
+  margin-bottom: 15px;
 }
 .bold {
   font-weight: bold;
@@ -120,11 +123,11 @@ body {
 .m-t-40 {
   margin-top: 40px;
 }
-.m-l-0{
-  margin-left:0 !important;
+.m-l-0 {
+  margin-left: 0 !important;
 }
-.m-r-0{
-  margin-right:0 !important;
+.m-r-0 {
+  margin-right: 0 !important;
 }
 
 .pointer {
@@ -134,18 +137,17 @@ body {
 .underline {
   text-decoration: underline;
 }
-.back{
+.back {
   cursor: pointer;
 }
 @media (min-width: 480px) and (max-width: 4800px) {
-
   .back {
     width: 30px;
   }
-  
-.my-text-justify{
-  text-align: justify;
-}
+
+  .my-text-justify {
+    text-align: justify;
+  }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .m-t-nav-mobile {
@@ -154,28 +156,39 @@ body {
   .back {
     width: 20px;
   }
-  .header, .content{
+  .header,
+  .content {
     text-align: center;
   }
-  .links{
-    text-align: center !important; 
+  .links {
+    text-align: center !important;
   }
 }
 
-.links{
-  text-align: left ; color:var(--my-grey); text-decoration: underline; cursor:pointer;   font-weight: 300;
-  word-wrap:break-word;
-
+.links {
+  text-align: left;
+  color: var(--my-grey);
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 300;
+  word-wrap: break-word;
 }
 
-.links:hover{
-  color:var(--my-blue)
+.links:hover {
+  color: var(--my-blue);
 }
 
-.p-20{
-  padding:20px;
+.p-20 {
+  padding: 20px;
 }
 // input.ng-touched.ng-invalid{
 //   border-color: #BD362F;
 //   background-color: #BD362F;
 // }
+.p-l-0 {
+  padding-left: 0 !important;
+}
+
+.p-r-0 {
+  padding-right: 0 !important;
+}
