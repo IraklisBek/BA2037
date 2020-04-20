@@ -2,8 +2,9 @@
   <span style="font-size:1.2em">Live</span>
 </div>
 
-<div class="content row" [@fadeInOnEnter]>
-  <div *ngFor="let artistLive of artistsLive; let i=index" class="col-md-2 col-sm-4 col-6 text-center">
+<div class="content row" [@fadeInOnEnter] dtyle="padding-left:15px; padding-right:15px">
+  <div *ngFor="let artistLive of artistsLive; let i=index" class="col-md-2 col-sm-4 col-6 text-center"
+  [ngStyle]="{'padding-right': i%2==0? '0': '15px', 'padding-left': i%2==1? '0': '15px'}">
     <app-artist [artist] = artistLive></app-artist>
   </div>
 </div>
