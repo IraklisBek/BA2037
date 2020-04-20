@@ -13,7 +13,8 @@
 </div>
 
 <div class="content row" [@fadeInOnEnter]>
-  <div *ngFor="let artistDJSet of artistsDJSet; let i=index" class="col-md-2 col-sm-4 col-6 text-center">
+  <div *ngFor="let artistDJSet of artistsDJSet; let i=index" class="col-md-2 col-sm-4 col-6 text-center"
+  [ngStyle]="{'padding-right': i%2==0? '0': '15px', 'padding-left': i%2==1? '0': '15px'}">
     <app-artist [artist] = artistDJSet></app-artist>
   </div>
 </div>
