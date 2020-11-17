@@ -4,7 +4,7 @@
 
 <div class="content row" [@fadeInOnEnter]>
   <div *ngFor="let sunday of sundays; let i=index"class="col-md-2 col-sm-4 col-6 text-center"
-  [ngStyle]="{'padding-right': i%2==0? '0': '15px', 'padding-left': i%2==1? '0': '15px'}">
+  [ngStyle]="{'padding-right': (isMobile && i%2==0)? '0': '15px', 'padding-left': (isMobile && i%2==1)? '0': '15px'}">
     <app-event [event] = sunday></app-event>
   </div>
 </div>
@@ -15,7 +15,7 @@
 
 <div class="content row" [@fadeInOnEnter]>
   <div *ngFor="let saturday of saturdays; let i=index"class="col-md-2 col-sm-4 col-6 text-center"
-  [ngStyle]="{'padding-right': i%2==0? '0': '15px', 'padding-left': i%2==1? '0': '15px'}">
+  [ngStyle]="{'padding-right': (isMobile && i%2==0)? '0': '15px', 'padding-left': (isMobile && i%2==1)? '0': '15px'}">
     <app-event [event] = saturday></app-event>
   </div>
 </div>
@@ -26,7 +26,7 @@
 
 <div class="content row" [@fadeInOnEnter]>
   <div *ngFor="let party of parties; let i=index"class="col-md-2 col-sm-4 col-6 text-center"
-  [ngStyle]="{'padding-right': i%2==0? '0': '15px', 'padding-left': i%2==1? '0': '15px'}">
+  [ngStyle]="{'padding-right': (isMobile && i%2==0)? '0': '15px', 'padding-left': (isMobile && i%2==1)? '0': '15px'}">
     <app-event [event] = party></app-event>
   </div>
 </div>

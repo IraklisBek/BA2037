@@ -14,6 +14,7 @@ export class ArtistsComponent implements OnInit {
   public artists
   public artistsLive
   public artistsDJSet
+  isMobile
   constructor(
     private dataService: GetDataService,
     private route: ActivatedRoute,
@@ -23,6 +24,7 @@ export class ArtistsComponent implements OnInit {
    }
 
   ngOnInit() {
+    this.isMobile = this.dataService.getDevice().isMobile
     this.route.queryParams.subscribe(params => {
       setTimeout(function () {
         if (params["scroll"] != undefined) {

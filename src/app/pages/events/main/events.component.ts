@@ -16,7 +16,7 @@ export class EventsComponent implements OnInit {
   public sundays
   public saturdays
   public parties
-
+  isMobile
   constructor(
     private getDataService: GetDataService,
     private route: ActivatedRoute,
@@ -26,6 +26,8 @@ export class EventsComponent implements OnInit {
    }
 
   ngOnInit() {
+    this.isMobile = this.getDataService.getDevice().isMobile
+
     this.route.queryParams.subscribe(params => {
       setTimeout(function () {
         if (params["scroll"] != undefined) {
