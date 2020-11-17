@@ -13,6 +13,10 @@
           <div *ngFor="let line of blog.text">
             {{line}}
           </div>
+          <div *ngIf="blog.event" style="margin-top:10px;">
+            <span style="  color: var(--my-blue); font-weight: bold;">Visit Event: </span><span (click)="goToEvent(blog.event)"
+              class="links">{{getEvent(blog.event).name}}</span>
+          </div>
         </div>
       </div>
       <div class="row">

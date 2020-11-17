@@ -12,6 +12,14 @@
   <!-- style="width:100%" -->
   <div class="col-md-4 col-sm-4 col-12 text-center">
     <img src="../../../assets/Images/Artists/{{artist.photo}}" class="artist-img">
+    <div *ngIf="artist.bandcamp; let bandcamp" class="row" style="margin-top:10px;">
+      <div class="col-md-2 col-sm-2 col-2 my-auto">
+        <img src="../../../assets/Images/bandcamp.png" style="width:30px; margin-left:15px;">
+      </div>
+      <div class="links col-md-10 col-sm-10 col-10 my-auto"
+        (click)="goToLink(bandcamp)" style="text-align: left !important;">
+        {{bandcamp}}</div>
+    </div>
     <div *ngIf="artist.soundcloud; let soundcloud" class="row" style="margin-top:10px;">
       <div class="col-md-2 col-sm-2 col-2 my-auto">
         <img src="../../../assets/Images/soundcloud2.png" style="width:30px; margin-left:15px;">

@@ -48,6 +48,11 @@ export class GetDataService {
     return event[0]
   }
 
+  getEventByID(events, event_id){
+    var event = events.filter(e => e.id == event_id)
+    return event[0]
+  }
+
   getEventsType(events: EventModel[], type){
     var eventType = []
     for (let event of events){
