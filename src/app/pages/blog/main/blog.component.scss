@@ -2,5 +2,20 @@
     background-color: var(--my-black);
     color: var(--my-grey);
     border-radius:8px;
-    padding:20px;
+    padding:15px;
+    padding-top:0;
+    background-color: var(--my-black2); color:var(--my-grey);
+}
+
+hr {
+    border-top: 1px solid white;
+    width:100% !important;
+}
+
+.blog-title{
+    background-color: var(--my-black); color:var(--my-grey);font-weight: bold; border-top-left-radius: 8px; border-top-right-radius: 8px; padding-top:15px; padding-bottom:15px;
+}
+
+.links{
+    font-weight: bold;
 }

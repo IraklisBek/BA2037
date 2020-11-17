@@ -15,7 +15,7 @@ import { HttpClient } from '@angular/common/http';
   animations: [fadeInOnEnterAnimation()]
 })
 export class BlogComponent implements OnInit {
-  public blogs
+  public blogs: any[]
   top
   events
   constructor(
@@ -27,6 +27,7 @@ export class BlogComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.blogs = [];
     var _this = this
     window.addEventListener("scroll", function (event) {
       _this.top = this.scrollY
@@ -38,7 +39,11 @@ export class BlogComponent implements OnInit {
       "https://thumbnailer.mixcloud.com/unsafe/1200x628/profile/c/1/3/0/cea5-de62-494b-9d46-2f95a8d73d46",
       "https://ba2037.com")
     this.getDataService.getBlog().subscribe(res => {
-      this.blogs = res
+      console.log(res);
+      for(var i=0; i< Object.keys(res).length ; i++){
+        this.blogs.push(res[i]);
+      }
+      this.blogs = this.blogs.reverse();
     })
     this.getEvents();
   }

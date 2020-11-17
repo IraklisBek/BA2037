@@ -2,10 +2,17 @@
   <span style="font-size:1.2em">BA2037 Posts</span>
 </div>
 
-<div class="content" [@fadeInOnEnter]>
-  <div class="row">
-    <div *ngFor="let blog of blogs" class="col-md-12 col-sm-12 col-12 post">
-      <div class="row">
+<div class="content" [@fadeInOnEnter] style="padding-top:0">
+  <div class="row" style="margin:15px; margin-left:0; margin-right:0">
+    <div *ngFor="let blog of blogs" class="col-md-12 col-sm-12 col-12 post" style="margin-top:15px;">
+      <div class="row blog-title">
+        <div class="col-md-12 col-sm-12 col-12">
+          {{blog.title}}
+          <div style="float:right; font-weight: bold;">{{blog.date}}</div>
+
+        </div>
+      </div>
+      <div class="row" style="margin-top:15px;">
         <div class="col-md-2 col-sm-2 col-12">
           <img src="../../../assets/Images/Blog/{{blog.photo}}" style="width:100%; border-radius:8px;">
         </div>
@@ -14,14 +21,9 @@
             {{line}}
           </div>
           <div *ngIf="blog.event" style="margin-top:10px;">
-            <span style="  color: var(--my-blue); font-weight: bold;">Visit Event: </span><span (click)="goToEvent(blog.event)"
-              class="links">{{getEvent(blog.event).name}}</span>
+            <span style="  color: var(--my-blue); font-weight: bold;">Visit Event: </span><span
+              (click)="goToEvent(blog.event)" class="links">{{getEvent(blog.event).name}}</span>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-12">
-          <div style="float:right">{{blog.date}}</div>
         </div>
       </div>
     </div>
