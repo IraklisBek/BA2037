@@ -11,25 +11,25 @@
 <div class="content">
 
 
-  <div class="row m-t-40" [@fadeInOnEnter]>
+  <div class="row m-t-40  event-content" [@fadeInOnEnter]>
     <!-- style="width:100%" -->
-    <div class="col-md-4 col-sm-4 col-12 text-center">
+    <div class="col-md-4 col-sm-4 col-12 text-center event-left">
       <img src="../../../assets/Images/Events/{{event.poster}}" class="event-img">
-      <div style="color: var(--my-grey); font-weight:bold; color:var(--my-blue)">Listen at:</div>
+      <div style="color: var(--my-grey); font-weight:bold; color:var(--my-greyer)">Listen at:</div>
       <div *ngIf="event.mixcloud!='-'" class="row">
         <div class="col-md-2 col-sm-2 col-2 my-auto text-center">
-          <img src="../../../assets/Images/mixcloud.png" style="width:80%;" class="icon-left">
+          <img src="../../../assets/Images/mixcloud.png" style="width:30px;" class="icon-left">
         </div>
-        <div class="links col-md-10 col-sm-10 col-10 p-20 my-auto" (click)=goToLink(event.mixcloud)
+        <div class="links-blue col-md-10 col-sm-10 col-10 p-20 my-auto" (click)=goToLink(event.mixcloud)
           style="text-align: left !important;">{{event.mixcloud}}
         </div>
 
       </div>
       <div *ngIf="event.mixcloud=='-'" class="row">
-        <span style="color:var(--my-grey)">No playlist available</span>
+        <span style="color:var(--my-red)">No playlist available</span>
       </div>
       <div *ngFor="let mix of event.mixcloud_all">
-        <iframe width="100%" height="60" [src]="mix | safe" frameborder="0" webkitallowfullscreen mozallowfullscreen
+        <iframe width="100%;" height="60" [src]="mix | safe" frameborder="0" webkitallowfullscreen mozallowfullscreen
           allowfullscreen></iframe>
       </div>
       <!-- <div style="padding:10px; color:var(--my-grey)">{{event.date}}</div> -->
@@ -46,72 +46,79 @@
     </div>
     <div *ngIf="isMobile" class="seperator dashed-line"></div>
 
-    <div class="col-8 col-sm-8 col-12 mobile-center" style="color:var(--my-grey)">
+    <div class="col-8 col-sm-8 col-12 mobile-center event-right">
 
 
       <!-- <div class="header" [@fadeInOnEnter] style="margin-bottom:20px;">
       <span style="font-size:1.2em">Live Acts</span>
     </div> -->
-      <div class="description">
+      <div class="description m-b-15">
         <div class="artist-name">{{event.name}}</div>
         <div *ngFor="let line of event.description" class="align">
           <div class="my-text-justify">{{line}}</div>
         </div>
       </div>
 
-      <div class="seperator dashed-line"></div>
-
       <div *ngFor="let live of lives">
         <div class="row">
-          <div class="col-md-1 col-sm-12 col-12 my-auto">
+          <div class="col-md-12 col-12">
+            <div class="seperator dashed-line"></div>
+            <div class="artist-name">{{live.name}} (Live)</div>
+            <div class="seperator dashed-line"></div>
+          </div>
+          <div class="col-md-2 col-sm-12 col-3 my-auto p-r-0">
             <img src="../../../assets/Images/Artists/{{live.photo}}" class="artist-img">
           </div>
-          <div class="col-md-11 col-sm-12 col-12 my-auto">
-            <div class="artist-name">{{live.name}} (Live)</div>
+          <div class="col-md-10 col-sm-12 col-9 my-auto">
+            <div class="">
+              <div *ngIf="live.bandcamp; let bandcamp" class="row" style="margin-top:10px;">
+                <div class="col-md-1 col-sm-2 col-2 my-auto text-center p-r-0">
+                  <img src="../../../assets/Images/bandcamp.png" style="width:80%;">
+                </div>
+                <div class="links-blue col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(bandcamp)">
+                  bandcamp</div>
+              </div>
+              <div *ngIf="live.soundcloud; let soundcloud" class="row" style="margin-top:10px;">
+                <div class="col-md-1 col-sm-2 col-2 my-auto text-center p-r-0">
+                  <img src="../../../assets/Images/soundcloud2.png" style="width:80%;">
+                </div>
+                <div class="links-blue col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(soundcloud)">soundcloud</div>
+              </div>
+              <div *ngIf="live.mixcloud; let mixcloud" class="row" style="margin-top:10px;">
+                <div class="col-md-1 col-sm-2 col-2 my-auto text-center p-r-0">
+                  <img src="../../../assets/Images/mixcloud.png" style="width:80%;">
+                </div>
+                <div class="links-blue col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(mixcloud)">
+                  mixcloud</div>
+              </div>
+              <div *ngIf="live.youtube; let youtube" class="row" style="margin-top:10px;">
+                <div class="col-md-1 col-sm-2 col-2 my-auto text-center p-r-0">
+                  <img src="../../../assets/Images/youtube.png" style="width:80%;">
+                </div>
+                <div class="links-blue col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(youtube)">
+                  youtube</div>
+              </div>
+              <div *ngIf="live.facebook; let facebook" class="row" style="margin-top:10px;">
+                <div class="col-md-1 col-sm-2 col-2 my-auto text-center p-r-0">
+                  <img src="../../../assets/Images/facebook.png" style="width:80%;">
+                </div>
+                <div class="links-blue col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(facebook)">
+                  facebook</div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="m-t-15">
-          <div *ngIf="live.bandcamp; let bandcamp" class="row" style="margin-top:10px;">
-            <div class="col-md-1 col-sm-2 col-2 my-auto text-center">
-              <img src="../../../assets/Images/bandcamp.png" style="width:80%;">
-            </div>
-            <div class="links col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(bandcamp)">
-              {{bandcamp}}</div>
-          </div>
-          <div *ngIf="live.soundcloud; let soundcloud" class="row" style="margin-top:10px;">
-            <div class="col-md-1 col-sm-2 col-2 my-auto text-center">
-              <img src="../../../assets/Images/soundcloud2.png" style="width:80%;">
-            </div>
-            <div class="links col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(soundcloud)">{{soundcloud}}</div>
-          </div>
-          <div *ngIf="live.mixcloud; let mixcloud" class="row" style="margin-top:10px;">
-            <div class="col-md-1 col-sm-2 col-2 my-auto text-center">
-              <img src="../../../assets/Images/mixcloud.png" style="width:80%;">
-            </div>
-            <div class="links col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(mixcloud)">
-              {{mixcloud}}</div>
-          </div>
-          <div *ngIf="live.youtube; let youtube" class="row" style="margin-top:10px;">
-            <div class="col-md-1 col-sm-2 col-2 my-auto text-center">
-              <img src="../../../assets/Images/youtube.png" style="width:80%;">
-            </div>
-            <div class="links col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(youtube)">
-              {{youtube}}</div>
-          </div>
-          <div *ngIf="live.facebook; let facebook" class="row" style="margin-top:10px;">
-            <div class="col-md-1 col-sm-2 col-2 my-auto text-center">
-              <img src="../../../assets/Images/facebook.png" style="width:80%;">
-            </div>
-            <div class="links col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(facebook)">
-              {{facebook}}</div>
-          </div>
-        </div>
-        <div class="m-t-15">
+
+        <div class="m-t-15 m-b-15">
           <div *ngFor="let line of live.description">
-            <div class="my-text-justify">{{line}}</div>
+            <div *ngIf="line=='-'">
+              <span style="color:var(--my-red)">No description available</span>
+            </div>
+            <div *ngIf="line!='-'">
+              <div class="my-text-justify">{{line}}</div>
+            </div>
           </div>
         </div>
-        <div class="seperator dashed-line"></div>
       </div>
 
 
@@ -123,55 +130,64 @@
 
       <div *ngFor="let set of djsets">
         <div class="row">
-          <div class="col-md-1 col-sm-12 col-12 my-auto">
+          <div class="col-md-12 col-12">
+            <div class="seperator dashed-line"></div>
+            <div class="artist-name">{{set.name}} (Dj Set)</div>
+            <div class="seperator dashed-line"></div>
+          </div>
+          <div class="col-md-2 col-sm-12 col-3 my-auto p-r-0">
             <img src="../../../assets/Images/Artists/{{set.photo}}" class="artist-img">
           </div>
-          <div class="col-md-11 col-sm-12 col-12 my-auto">
-            <div class="artist-name">{{set.name}} (Dj Set)</div>
+          <div class="col-md-10 col-sm-12 col-9 my-auto">
+            <div class="">
+              <div *ngIf="set.bandcamp; let bandcamp" class="row" style="margin-top:10px;">
+                <div class="col-md-1 col-sm-2 col-2 my-auto text-center p-r-0">
+                  <img src="../../../assets/Images/bandcamp.png" style="width:80%;">
+                </div>
+                <div class="links-blue col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(bandcamp)">
+                  bandcamp</div>
+              </div>
+              <div *ngIf="set.soundcloud; let soundcloud" class="row" style="margin-top:10px;">
+                <div class="col-md-1 col-sm-2 col-2 my-auto text-center p-r-0">
+                  <img src="../../../assets/Images/soundcloud2.png" style="width:80%;">
+                </div>
+                <div class="links-blue col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(soundcloud)">soundcloud</div>
+              </div>
+              <div *ngIf="set.mixcloud; let mixcloud" class="row" style="margin-top:10px;">
+                <div class="col-md-1 col-sm-2 col-2 my-auto text-center p-r-0">
+                  <img src="../../../assets/Images/mixcloud.png" style="width:80%;">
+                </div>
+                <div class="links-blue col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(mixcloud)">
+                  mixcloud</div>
+              </div>
+              <div *ngIf="set.youtube; let youtube" class="row" style="margin-top:10px;">
+                <div class="col-md-1 col-sm-2 col-2 my-auto text-center p-r-0">
+                  <img src="../../../assets/Images/youtube.png" style="width:80%;">
+                </div>
+                <div class="links-blue col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(youtube)">
+                  youtube</div>
+              </div>
+              <div *ngIf="set.facebook; let facebook" class="row" style="margin-top:10px;">
+                <div class="col-md-1 col-sm-2 col-2 my-auto text-center p-r-0">
+                  <img src="../../../assets/Images/facebook.png" style="width:80%;">
+                </div>
+                <div class="links-blue col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(facebook)">
+                  facebook</div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="m-t-15">
-          <div *ngIf="set.bandcamp; let bandcamp" class="row" style="margin-top:10px;">
-            <div class="col-md-1 col-sm-2 col-2 my-auto text-center">
-              <img src="../../../assets/Images/bandcamp.png" style="width:80%;">
-            </div>
-            <div class="links col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(bandcamp)">
-              {{bandcamp}}</div>
-          </div>
-          <div *ngIf="set.soundcloud; let soundcloud" class="row" style="margin-top:10px;">
-            <div class="col-md-1 col-sm-2 col-2 my-auto text-center">
-              <img src="../../../assets/Images/soundcloud2.png" style="width:80%;">
-            </div>
-            <div class="links col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(soundcloud)">{{soundcloud}}</div>
-          </div>
-          <div *ngIf="set.mixcloud; let mixcloud" class="row" style="margin-top:10px;">
-            <div class="col-md-1 col-sm-2 col-2 my-auto text-center">
-              <img src="../../../assets/Images/mixcloud.png" style="width:80%;">
-            </div>
-            <div class="links col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(mixcloud)">
-              {{mixcloud}}</div>
-          </div>
-          <div *ngIf="set.youtube; let youtube" class="row" style="margin-top:10px;">
-            <div class="col-md-1 col-sm-2 col-2 my-auto text-center">
-              <img src="../../../assets/Images/youtube.png" style="width:80%;">
-            </div>
-            <div class="links col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(youtube)">
-              {{youtube}}</div>
-          </div>
-          <div *ngIf="set.facebook; let facebook" class="row" style="margin-top:10px;">
-            <div class="col-md-1 col-sm-2 col-2 my-auto text-center">
-              <img src="../../../assets/Images/facebook.png" style="width:80%;">
-            </div>
-            <div class="links col-md-10 col-sm-10 col-10 my-auto" style="text-align: left !important;" (click)="goToLink(facebook)">
-              {{facebook}}</div>
-          </div>
-        </div>
+
         <div class="m-t-15">
           <div *ngFor="let line of set.description">
-            <div class="my-text-justify">{{line}}</div>
+            <div *ngIf="line=='-'">
+              <span style="color:var(--my-red)">No description available</span>
+            </div>
+            <div *ngIf="line!='-'">
+              <div class="my-text-justify">{{line}}</div>
+            </div>
           </div>
         </div>
-        <div class="seperator dashed-line"></div>
       </div>
 
 

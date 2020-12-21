@@ -1,0 +1,17 @@
+.media-img {
+    width: 30px;
+}
+
+.ml {
+    margin-left: 15px;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .media-img {
+        width: 42px;
+    }
+
+    .ml {
+        margin-left: 30px;
+    }
+}
